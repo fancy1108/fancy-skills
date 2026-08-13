@@ -19,7 +19,7 @@ A place to write a markdown file (current directory, a named path, or Obsidian).
 ## Common questions
 
 **I already know what I want. Do I still hunt complaints?**
-If you can already say who / how painful / why now in your own words, skip research. A name like "减肥小工具" is not enough — the agent still brings quotes and competitors so you can answer those three.
+If you can already say who / how painful / why now in your own words, skip research. A product name alone is not enough — the agent still brings quotes and competitors so you can answer those three.
 
 **Can the agent invent the three answers?**
 No. It may propose from the evidence; you confirm. Unconfirmed answers do not open the gate.

@@ -20,6 +20,6 @@ Search for what is broken. Prefer recent posts (last 1–2 years). Keep the doma
 - [new API or model] [old job]
 - "I built a weekend [category] widget"
 
-## Seed example
+## Seed
 
-Seed = 减肥桌面小工具 → search weight-tracker / MyFitnessPal / Lose It / 体重记录 抱怨 / desktop widget — **not** "developers hate that there is no tool".
+If they named a category, search **that** category's incumbents, 1-star reviews, and "I hate that…" posts. Do not wander into an unrelated field.

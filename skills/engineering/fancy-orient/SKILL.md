@@ -12,7 +12,7 @@ description: >-
 
 Product truth before a repo. **Step 1 first: research, then evidence.** Step 2 is the proposal. **Never `git init`.** Never open by quizzing the three questions.
 
-A product name ("做一个减肥小工具") is a **seed**, not a finished answer. Users cannot answer who / how painful / why now well until they have seen real complaints and competitors. Your job in step 1 is to go get that, put it in front of them, then help them converge.
+A product name is a **seed**, not a finished answer. Users cannot answer who / how painful / why now well until they have seen real complaints and competitors. Your job in step 1 is to go get that, put it in front of them, then help them converge.
 
 Do not invent `/product-lens`, `/grill-me`, `/exa-search`, or `/to-prd`. Search and grill inside this skill.
 
@@ -27,7 +27,7 @@ Do not invent `/product-lens`, `/grill-me`, `/exa-search`, or `/to-prd`. Search 
 
 Skip step 1 **only** if the user already stated all three answers **in their own words**, without hedging, in this conversation (or they paste a complete `proposal.md`).
 
-Do **not** skip because they named a product, said "走 A", or "I already know what I want." Name ≠ pain. If any of the three would still be a guess, research first.
+Do **not** skip because they named a product or said they already know what they want. Name ≠ pain. If any of the three would still be a guess, research first.
 
 ## Research (step 1)
 
@@ -60,7 +60,7 @@ The user answers these. You may propose **from the evidence**; they confirm. Uns
 2. **How painful** is it?
 3. **Why now?**
 
-Frame each with a fork taken from the research ("these reviews are from busy people who open MyFitnessPal once and bounce — is that you, or is it someone tracking daily?"). Do not dump three empty prompts.
+Frame each with a fork taken from the research (which quoted pain, which incumbent they bounce off). Do not dump three empty prompts.
 
 All three stable → grill, then write `proposal.md`. That is the handshake.
 
