@@ -2,11 +2,9 @@
 
 Small, owned, composable agent skills. You keep control of the process; the skills stay easy to hack.
 
+[English](README.md) · [简体中文](README.zh-CN.md)
+
 V1 is the **forge**: install, a router, and one-time per-repo setup. Workflow skills land later.
-
-## 中文简介
-
-这是我自己的 Agent Skills 仓库：技能小、可改、可组合。第一版先交付安装方式、路由器 `/ask-fancy`，以及每个消费仓库跑一次的 `/setup-fancy-skills`（幂等，并写入 Cursor 规则）。工作流技能之后再晋升进 `engineering/` 或 `productivity/`。
 
 ## Installation
 

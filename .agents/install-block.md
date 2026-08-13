@@ -1,6 +1,8 @@
-# The canonical install block
+# The canonical install block (English)
 
-One install story, one wording. `README.md` must say **this** and nothing else. Change it here first, then copy into the README.
+One install story, one wording. `README.md` must say **this** and nothing else. Change it here first, then copy into the English README.
+
+Chinese wording lives in [install-block.zh-CN.md](./install-block.zh-CN.md) and is copied into `README.zh-CN.md`. Do not mix the two languages in one README.
 
 The two routes are exclusive. The Claude Code plugin is a managed bundle. skills.sh copies editable skill files into a project. Installing both leaves every skill twice — always say "pick one".
 

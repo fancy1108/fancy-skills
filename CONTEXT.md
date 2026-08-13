@@ -13,7 +13,7 @@ A single tracked unit of work inside an **Issue tracker** — a bug, task, spec,
 _Avoid_: ticket (use only when quoting an external system that calls them tickets)
 
 **Promoted skill**:
-A skill in `skills/engineering/` or `skills/productivity/`. Promoted skills appear in the top-level `README.md`, `.claude-plugin/plugin.json`, and the generated inventory inside `/ask-fancy`. Skills in `misc/`, `in-progress/`, and `deprecated/` are not promoted.
+A skill in `skills/engineering/` or `skills/productivity/`. Promoted skills appear in `README.md`, `README.zh-CN.md`, `.claude-plugin/plugin.json`, and the generated inventory inside `/ask-fancy`. Skills in `misc/`, `in-progress/`, and `deprecated/` are not promoted.
 
 **User-invoked skill**:
 A skill reachable only when a human types its name. Frontmatter sets `disable-model-invocation: true`; Codex sets `policy.allow_implicit_invocation: false`. Other skills must not invoke it.

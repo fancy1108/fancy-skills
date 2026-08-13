@@ -9,7 +9,7 @@ A user-invoked skill may invoke model-invoked skills, but it can never reach ano
 
 Every skill also carries an `agents/openai.yaml` beside its `SKILL.md`. Keep the two in sync: a skill is user-invoked in both harnesses or neither.
 
-Bucket `README.md`s and the top-level `README.md` group entries into **User-invoked** and **Model-invoked**.
+Bucket `README.md`s and `README.md` group entries into **User-invoked** and **Model-invoked**. `README.zh-CN.md` uses **用户触发** and **模型触发**.
 
 ## Dependencies between them
 
