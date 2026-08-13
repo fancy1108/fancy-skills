@@ -57,13 +57,13 @@ Stop. Ask one question. Wait for the reply. Then either edit or proceed.
 | Research table | Which pain is yours? What did I get wrong? | react |
 | `proposal.md` | Is Pitch / MVP / Non-Goals right? | accept or name edits |
 | Init menus | which tier / stack / persistence | pick |
-| Three visual directions | which (or mix) | pick |
+| Three visual directions | A / B / C: name, named references, `oklch()`, type, forbids. Stop the turn. | pick or mix — a vibe word is not a pick |
 | Prototype / demo | Open it. What should change? | accept, or a change list — then revise and ask again |
 | `tasks.md` | Is this split right? | accept |
 | Harden evidence | Use it once. What's wrong? | they used it |
 | Ship plan | Deploy / local-only — yes? | yes |
 
-Forbidden: write `proposal.md` then immediately run `/fancy-shape`. Forbidden: write `demo.html` then immediately write `contract.ts`. Forbidden: declare shape complete and start `/fancy-build` in the same turn.
+Forbidden: write `proposal.md` then immediately run `/fancy-shape`. Forbidden: write `demo.html` before they picked a visual direction. Forbidden: write `demo.html` then immediately write `contract.ts`. Forbidden: declare shape complete and start `/fancy-build` in the same turn.
 
 ## Rewind (any lock, any time)
 

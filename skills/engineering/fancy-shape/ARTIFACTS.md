@@ -12,6 +12,8 @@ Paths use `specs/<feature>/` (default `core` when there is one product). Details
 
 ## From-scratch UI (step 5 — do not skip)
 
+**Gate in:** `design.md` exists because they **picked** a visual direction (step 4). If they have not picked A/B/C, go back to [VISUAL.md](VISUAL.md). Do not invent a look and jump here.
+
 Order: **demo → user looks → `contract.ts` → test-contract draft → `gate_report.md`**. Then step 6.
 
 | File | Role |

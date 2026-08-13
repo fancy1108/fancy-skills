@@ -35,6 +35,7 @@ Empty folder, install this collection, say you want a small **UI** product. You 
 - New product → `/fancy-orient`, not `git init`, not three empty prompts.
 - After proposal → stop until they accept it, then `/fancy-shape`.
 - After a clickable prototype → stop until they accept it; do not jump to `contract.ts`.
+- After init on a UI product → three visual directions as A/B/C, then stop; no `demo.html` until they pick.
 - Skip-to-code is refused until the shape gate is green.
 - Saying an earlier decision was wrong rewinds to that lock instead of restarting the product.
 
