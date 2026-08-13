@@ -50,7 +50,7 @@ Pick the branch from what the user actually has. Do not run 4 + 5 and 5.5.
 
 ## Sequence (do not reorder)
 
-1. **Init (step 3)** — [INIT.md](INIT.md). Confirm Micro / Mini / Pro with the user (default Mini if they shrug). Confirm stack, start command, and agent. Then `git init`, move `proposal.md`, short `CLAUDE.md`, first commit. Empty shell only.
+1. **Init (step 3)** — [INIT.md](INIT.md). Paste Micro / Mini / Pro as labeled options (table or A/B/C), then you may recommend one. Default Mini only if they shrug after seeing all three. Confirm stack, start command, and agent the same way. Then `git init`, move `proposal.md`, short `CLAUDE.md`, first commit. Empty shell only.
 2. **Visual (step 4, UI only)** — [VISUAL.md](VISUAL.md). Offer **three visual directions**, wait for a pick, then write `design.md`. Put visual bans into `CLAUDE.md`. Do not write `design.md` before they pick.
 3. **Contract (step 5 or 5.5)** — [ARTIFACTS.md](ARTIFACTS.md). From-scratch: demo → user looks at it → `contract.ts` → test-contract draft → `gate_report.md`. Existing: four-step audit, do not rewrite the UI. No-UI: skip to split.
 4. **Split (step 6)** — Show a short library/survey (at least two options, chosen vs rejected). Then `decisions.md`, then `memory/ARCHITECTURE.md` if Mini+, then `tasks.md`. Existing-prototype tasks include de-mock work; do not add tasks that grow the mock.

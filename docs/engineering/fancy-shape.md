@@ -4,7 +4,7 @@
 
 Fancy Shape is all preparation before business code: init the repo, lock visuals, produce a **high-fidelity prototype** as the interactive contract, then `decisions.md` and `tasks.md`.
 
-The defining constraint: do not skip the diverge steps. Init confirms stack with the user. Visual offers three directions before `design.md`. From-scratch prototype is demo → contract → test draft → gate report. An existing runnable UI is audited, not replaced.
+The defining constraint: do not skip the diverge steps. Init shows Micro / Mini / Pro as a menu (not a yes/no on Mini), then confirms stack with the user. Visual offers three directions before `design.md`. From-scratch prototype is demo → contract → test draft → gate report. An existing runnable UI is audited, not replaced.
 
 ## When to reach for it
 
@@ -27,7 +27,7 @@ No. Shape inits the product repo itself. `/fancy-init` is the optional conventio
 
 ## It's working if
 
-- `git init` happened only after orient and a confirmed stack.
+- `git init` happened only after orient, a **shown** Micro/Mini/Pro menu, and a confirmed stack.
 - Three visual directions appeared before `design.md` on a UI product.
 - A UI product has a clickable high-fidelity artifact (or the user's existing one) before `tasks.md`.
 - `/fancy-build` is still blocked until the gate is green.

@@ -15,11 +15,17 @@
 
 ## 档次 — 先问，再建
 
+`git init` 之前，把这张表（或 A / B / C）**写进对话**。然后可以标一个推荐。等他们选。只有他们**看过三个之后**随口一点，才默认 Mini。
+
+禁止：「个人小工具，建议 Mini，确认？」——他们根本不知道还有 Micro、Pro。
+
 | 档次 | 何时 | 建什么 |
 | --- | --- | --- |
 | **Micro** | 一次性脚本、无 UI、不需要跨会话记忆 | `git init` + 短 `CLAUDE.md`（或 Cursor 规则）≤ 60 行 |
 | **Mini**（他们随便点就默认这个） | 个人产品、2–3 个能力 | 第 1–3 层：`CLAUDE.md`、`specs/core/proposal.md`、`memory/PROGRESS.md`、`.gitignore`、`.env.example` |
 | **Pro** | 长期产品、很多会话 | Mini + `memory/{PROGRESS,FAILURES,ARCHITECTURE,DECISIONS,ROADMAP,TESTS}.md`（空壳）、空的 `.claude/` / `.cursor/` / `runs/`，若他们要则加 `docs/document-governance.md` |
+
+技术栈、启动命令、持久化同一条：先给带标签的选项，再给推荐。不要拿「就用这个，确认？」锁定技术栈。
 
 ## 搬提案
 

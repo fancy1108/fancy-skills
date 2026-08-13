@@ -47,7 +47,7 @@ description: >-
 
 ## 顺序（不许打乱）
 
-1. **初始化（第 3 步）** — [INIT.md](INIT.md)。和用户确认 Micro / Mini / Pro（他们随便点就默认 Mini）。确认栈、启动命令、Agent。然后 `git init`，搬 `proposal.md`，短 `CLAUDE.md`，第一次提交。只建空壳。
+1. **初始化（第 3 步）** — [INIT.md](INIT.md)。把 Micro / Mini / Pro 做成带标签的选项（表或 A/B/C）贴进对话，然后可以标一个推荐。只有他们看过三个之后随口一点，才默认 Mini。技术栈、启动命令、Agent 同一写法。然后 `git init`，搬 `proposal.md`，短 `CLAUDE.md`，第一次提交。只建空壳。
 2. **视觉（第 4 步，仅 UI）** — [VISUAL.md](VISUAL.md)。给 **三个视觉方向**，等他们选，再写 `design.md`。视觉禁令写进 `CLAUDE.md`。没选之前不要写 `design.md`。
 3. **契约（第 5 或 5.5 步）** — [ARTIFACTS.md](ARTIFACTS.md)。从零：demo → 人看 → `contract.ts` → 测试契约草稿 → `gate_report.md`。已有：四步审计，不重写 UI。无 UI：跳到拆解。
 4. **拆解（第 6 步）** — 先给一轮库/方案调研（至少两个选项，选定 vs 否决）。然后 `decisions.md`，Mini+ 再写 `memory/ARCHITECTURE.md`，然后 `tasks.md`。已有原型分支的任务必须含去 mock；不要加扩张 mock 的任务。

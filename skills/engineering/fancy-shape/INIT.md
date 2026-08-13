@@ -15,11 +15,17 @@ Missing any layer → stay here.
 
 ## Tiers — ask, then build
 
+Show this table (or A / B / C) **in the chat** before `git init`. Then you may mark one as recommended. Wait for a pick. Default Mini only if they shrug **after seeing the three**.
+
+Forbidden: "This is a personal tool, I suggest Mini, confirm?" — they never learn Micro or Pro exist.
+
 | Tier | When | What to create |
 | --- | --- | --- |
 | **Micro** | One-shot script, no UI, no cross-session memory | `git init` + short `CLAUDE.md` (or Cursor rule) ≤ 60 lines |
 | **Mini** (default if they shrug) | Personal product, 2–3 capabilities | Layers 1–3: `CLAUDE.md`, `specs/core/proposal.md`, `memory/PROGRESS.md`, `.gitignore`, `.env.example` |
 | **Pro** | Long-lived product, many sessions | Mini + `memory/{PROGRESS,FAILURES,ARCHITECTURE,DECISIONS,ROADMAP,TESTS}.md` (empty stubs), empty `.claude/` / `.cursor/` / `runs/`, `docs/document-governance.md` if they want it |
+
+Stack, start command, and persistence follow the same rule: labeled options first, recommendation second. Do not lock a stack with a yes/no on a single pick.
 
 ## Move the proposal
 
