@@ -68,6 +68,10 @@ These split on one axis — who can invoke them. **User-invoked** skills are rea
 
 - **[fancy-flow](./skills/engineering/fancy-flow/SKILL.md)** — Start or continue a product / vibe-coding pipeline. Intent-triggered; not for one-shot questions.
 - **[fancy-orient](./skills/engineering/fancy-orient/SKILL.md)** — Find the problem, lock who / how painful / why now, and write proposal.md. No git repo.
+- **[fancy-shape](./skills/engineering/fancy-shape/SKILL.md)** — Init, high-fidelity prototype as contract, then decisions.md and tasks.md. No business code.
+- **[fancy-build](./skills/engineering/fancy-build/SKILL.md)** — Write business code one task at a time from tasks.md.
+- **[fancy-harden](./skills/engineering/fancy-harden/SKILL.md)** — Physical tests and drift alignment. Evidence, not claims.
+- **[fancy-ship](./skills/engineering/fancy-ship/SKILL.md)** — Release and update memory.
 
 ### Productivity
 

@@ -30,12 +30,19 @@ Who is this for? How painful is it? Why now? The user answers; the agent must no
 **Handshake**:
 `/fancy-orient` is done when the **Three questions** are stable and `proposal.md` is on disk. No `git init` in that skill.
 
+**High-fidelity prototype**:
+The interactive contract produced (or audited) by `/fancy-shape`. From scratch: a clickable demo. Existing UI: that UI is the prototype. No UI: an explicit waiver in `decisions.md`. Same rank as `design.md` and `tasks.md`.
+
+**Shape gate**:
+`/fancy-shape` is done when `design.md` (or no-UI waiver), the **High-fidelity prototype** (or no-UI waiver), `tasks.md`, and `decisions.md` exist. Blocks `/fancy-build`.
+
 **Pipeline**:
-`/fancy-flow` is the intent-triggered assembler. It dispatches shipped **Model-invoked** stages. It must not run on one-shot questions.
+`/fancy-flow` is the intent-triggered assembler. It dispatches `/fancy-orient` → `/fancy-shape` → `/fancy-build` → `/fancy-harden` → `/fancy-ship`. It must not run on one-shot questions.
 
 ## Relationships
 
 - An **Issue tracker** holds many **Issues**
 - A **Promoted skill** is either **User-invoked** or **Model-invoked**
 - `/fancy-init` writes **Setup state** in the consuming repo
-- `/fancy-flow` runs `/fancy-orient` until the **Handshake** is done
+- `/fancy-flow` runs stage skills in order until the current **gate** is done
+- `/fancy-shape` produces the **High-fidelity prototype** as part of the **Shape gate**

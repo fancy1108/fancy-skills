@@ -52,4 +52,4 @@ Use the sections in [PROPOSAL.md](PROPOSAL.md). Fill Pitch, Problem, Tension, Go
 - [ ] `proposal.md` is on disk
 - [ ] No `git init` happened in this skill
 
-Tell `/fancy-flow` (or the user) the handshake is done. Stop. Do not initialize a project.
+Tell `/fancy-flow` (or the user) the handshake is done. Stop. Do not initialize a project — that is `/fancy-shape`.

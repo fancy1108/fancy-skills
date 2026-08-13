@@ -9,43 +9,43 @@ description: >-
 
 # Fancy Flow
 
-Intent-triggered pipeline. You are the assembler: detect where the work is, run the next shipped stage, stop at gates. You are not always-on — if this skill was reached for a one-shot question, **decline the pipeline** and answer the question.
+Intent-triggered assembler. Detect the stage, run the next **shipped** skill, stop at gates. If you were reached for a one-shot question, **decline the pipeline** and answer it.
 
 ## Do not steal ordinary chat
 
-Leave this skill if the user is asking for a regex, a traceback, a one-file fix, or anything that is not "new product / vibe coding / continue this product". Say nothing about `proposal.md`.
+Leave if the user wants a regex, a traceback, a one-file fix, or anything that is not "new product / vibe coding / continue this product". Say nothing about `proposal.md`.
 
-## Detect state
+## Stages
 
-Look, don't guess:
+| Stage | Human steps | Gate (must exist before leaving) |
+| --- | --- | --- |
+| `/fancy-orient` | 1 find the problem, 2 write the proposal | `proposal.md` + **three questions** stable. No git repo |
+| `/fancy-shape` | 3 init, 4 visual, 5 or 5.5 contract, 6 split tasks | `design.md` + **high-fidelity prototype** + `tasks.md` + `decisions.md` |
+| `/fancy-build` | 7 write code | Tasks delivered as real code, one at a time |
+| `/fancy-harden` | 8 test, 8.5 drift alignment | Physical verification logs + fixes. Evidence, not claims |
+| `/fancy-ship` | 9 release | Live (or shipped) status + memory updated |
 
-| Signal | Meaning |
+**Three questions** (user answers, agent does not invent): Who is this for? How painful is it? Why now?
+
+**High-fidelity prototype** is a **shape** deliverable, not optional flavour. It is the interactive contract the later stages must not violate. See `/fancy-shape` for the three branches (from-scratch demo, existing prototype, no UI).
+
+## Detect and dispatch
+
+Look at the workspace. Run **one** next stage. Stay in-session until that stage reports done or the user stops.
+
+| What you see | Do |
 | --- | --- |
-| No `proposal.md` and no `specs/**/proposal.md` | Orient has not finished |
-| Proposal exists but the **three questions** are missing or shaky | Orient is incomplete |
-| Proposal exists, three questions are stable, **no git repo** | Handshake done. Do **not** `git init`. Later stages are not shipped yet |
-| `.git` plus `design.md` / `tasks.md` / `decisions.md` | Later stages (shape / build). Not shipped yet |
+| No proposal, or three questions shaky | `/fancy-orient` |
+| Handshake done, shape gate incomplete | `/fancy-shape` |
+| Shape gate complete, tasks still open | `/fancy-build` |
+| Tasks done, no physical verification / drift still open | `/fancy-harden` |
+| Hardened, not shipped | `/fancy-ship` |
+| User wants to skip to code | Refuse until the **shape gate** is complete (and orient before that) |
 
-**Three questions** (must be answered by the user, not invented):
-
-1. Who is this for?
-2. How painful is it?
-3. Why now?
-
-## Dispatch
-
-1. **Orient incomplete** → run the `/fancy-orient` skill. Stay in this session until it reports the handshake is done or the user stops.
-2. **Handshake done, no later stage shipped** → tell the user: three questions are locked, `proposal.md` is written, **do not create a repo yet**. Next flesh on this skeleton is shape (init + design + tasks). Stop.
-3. **User asked to skip to code** → refuse until the three questions are stable. No repo, no business code.
-
-A stage skill is model-invoked on purpose so this skill can reach it. Never try to invoke a user-invoked skill (`/fancy-discover`, `/fancy-init`).
+Never invoke user-invoked skills (`/fancy-discover`, `/fancy-init`). Shape does its own repo init.
 
 ## Hard gates
 
-- **No git repo** until the three questions are stable. `fancy-orient` must not `git init`. Neither must you.
-- **No business code** until later stages exist *and* `design.md` + `tasks.md` + `decisions.md` are present. Today those stages are not shipped — do not improvise them.
-- **No DB schema, no task list, no UI spec** during orient.
-
-## When a stage is missing
-
-Name it. Do not fake `/grill-me`, `/tdd`, or Superpowers. Point at `/fancy-discover` only if the user asks what else is in the collection (they type that themselves).
+- **No `git init`** until orient's three questions are stable. Orient must not init. Flow must not init. Shape inits.
+- **No business code** until the shape gate is complete, including the high-fidelity prototype (or an explicit no-UI waiver in `decisions.md`).
+- Do not invent `/grill-me` or Superpowers. Missing stages are named, not faked.

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Fancy Build"
+  short_description: "One task, verify, next task"
