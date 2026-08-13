@@ -42,9 +42,9 @@ npx skills@latest add fancy1108/fancy-skills
 单条技能：
 
 ```bash
-npx skills@latest add fancy1108/fancy-skills --skill=catalog
+npx skills@latest add fancy1108/fancy-skills --skill=fancy-discover
 ```
 
 ```bash
-npx skills@latest update catalog
+npx skills@latest update fancy-discover
 ```

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Fancy Init"
+  short_description: "Initialize this workspace with Fancy's conventions"
+policy:
+  allow_implicit_invocation: false

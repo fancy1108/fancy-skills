@@ -42,9 +42,9 @@ Pick the skills you want, and which coding agents to install them on.
 Single-skill form:
 
 ```bash
-npx skills@latest add fancy1108/fancy-skills --skill=catalog
+npx skills@latest add fancy1108/fancy-skills --skill=fancy-discover
 ```
 
 ```bash
-npx skills@latest update catalog
+npx skills@latest update fancy-discover
 ```

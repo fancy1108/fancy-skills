@@ -43,13 +43,13 @@ npx skills@latest add fancy1108/fancy-skills
 
 Pick the skills you want, and which coding agents to install them on.
 
-### 2. Optional: `/connect`
+### 2. Optional: `/fancy-init`
 
-If a project should share this collection's issue tracker, domain docs, and Cursor rules, run `/connect` once in that repo. Later runs update the existing files instead of appending.
+If a project should use Fancy's conventions (issue tracker, domain docs, Cursor rules), run `/fancy-init` once in that workspace. Later runs update the existing files instead of appending.
 
 ### 3. See what's here
 
-Run `/catalog` to list the skills in this collection.
+Run `/fancy-discover` to explore the skills in this collection.
 
 ## What's in the collection
 
@@ -59,8 +59,8 @@ These split on one axis — who can invoke them. **User-invoked** skills are rea
 
 **User-invoked**
 
-- **[catalog](./skills/engineering/catalog/SKILL.md)** — Show what's in this collection and which skill to reach for.
-- **[connect](./skills/engineering/connect/SKILL.md)** — Wire this repo into the collection — issue tracker, domain docs, and Cursor rules.
+- **[fancy-discover](./skills/engineering/fancy-discover/SKILL.md)** — Discover the skills in this collection and which one to reach for.
+- **[fancy-init](./skills/engineering/fancy-init/SKILL.md)** — Initialize this workspace with Fancy's conventions — issue tracker, domain docs, and Cursor rules.
 
 **Model-invoked**
 

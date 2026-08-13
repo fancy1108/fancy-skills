@@ -12,10 +12,10 @@
   "keywords": [
     "skills",
     "personal",
-    "catalog"
+    "discover"
   ],
   "skills": [
-    "./skills/engineering/catalog",
-    "./skills/engineering/connect"
+    "./skills/engineering/fancy-discover",
+    "./skills/engineering/fancy-init"
   ]
 }

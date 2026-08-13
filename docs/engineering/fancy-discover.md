@@ -1,18 +1,18 @@
-# Catalog
+# Fancy Discover
 
 ## What it does
 
-Catalog lists the skills in this collection and which one to reach for. It only names skills that actually ship. It does not invent a workflow that is not in the generated inventory.
+Fancy Discover explores the skills in this collection and which one to reach for. It only names skills that actually ship. It does not invent a workflow that is not in the generated inventory.
 
 ## When to reach for it
 
-You invoke this by typing `/catalog` — the agent won't reach for it on its own.
+You invoke this by typing `/fancy-discover` — the agent won't reach for it on its own.
 
 Reach for it when you want to know what Fancy keeps in this collection.
 
 ## Prerequisites
 
-None. If a project needs tracker or glossary files, Catalog will point you at `/connect`.
+None. If a project needs tracker or glossary files, Fancy Discover will point you at `/fancy-init`.
 
 ## Common questions
 
@@ -25,9 +25,9 @@ No. Change `plugin.json` and run `scripts/build-router.sh`.
 ## It's working if
 
 - The agent only offers skills that are in the generated inventory.
-- It points a project that needs tracker/glossary files to `/connect`.
+- It points a project that needs tracker/glossary files to `/fancy-init`.
 - It refuses to pretend a skill that is not listed exists.
 
 ## Where it fits
 
-A **reach-for-it-anytime** index of the collection. Neighbour: `/connect`, when a consuming repo needs the shared files.
+A **reach-for-it-anytime** index of the collection. Neighbour: `/fancy-init`, when a consuming repo needs the shared files.

@@ -1,11 +1,11 @@
 # Engineering
 
-Daily code work. Promoted — listed in the plugin and `/catalog`.
+Daily code work. Promoted — listed in the plugin and `/fancy-discover`.
 
 ## User-invoked
 
-- **[catalog](./catalog/SKILL.md)** — Show what's in this collection and which skill to reach for.
-- **[connect](./connect/SKILL.md)** — Wire this repo into the collection — issue tracker, domain docs, and Cursor rules.
+- **[fancy-discover](./fancy-discover/SKILL.md)** — Discover the skills in this collection and which one to reach for.
+- **[fancy-init](./fancy-init/SKILL.md)** — Initialize this workspace with Fancy's conventions — issue tracker, domain docs, and Cursor rules.
 
 ## Model-invoked
 

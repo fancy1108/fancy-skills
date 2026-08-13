@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Rebuild the generated inventory in skills/engineering/catalog/SKILL.md
+# Rebuild the generated inventory in skills/engineering/fancy-discover/SKILL.md
 # from .claude-plugin/plugin.json (source of truth) + each skill's frontmatter.
 set -euo pipefail
 
@@ -17,7 +17,7 @@ from pathlib import Path
 
 ROOT = Path(os.environ["FANCY_SKILLS_ROOT"])
 PLUGIN = ROOT / ".claude-plugin" / "plugin.json"
-ASK = ROOT / "skills" / "engineering" / "catalog" / "SKILL.md"
+ASK = ROOT / "skills" / "engineering" / "fancy-discover" / "SKILL.md"
 BEGIN = "<!-- BEGIN GENERATED INVENTORY -->"
 END = "<!-- END GENERATED INVENTORY -->"
 PROMOTED = ("engineering", "productivity")

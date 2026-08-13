@@ -10,4 +10,4 @@ Read and follow these files; do not invent a parallel tracker or glossary.
 - Issue tracker: `docs/agents/issue-tracker.md`
 - Domain docs: `docs/agents/domain.md`
 
-If `docs/agents/setup-state.json` is missing, run the `/connect` skill before using other skills in this collection that need a tracker or glossary.
+If `docs/agents/setup-state.json` is missing, run the `/fancy-init` skill before using other skills in this collection that need a tracker or glossary.

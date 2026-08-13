@@ -1,0 +1,5 @@
+interface:
+  display_name: "Fancy Discover"
+  short_description: "Discover skills in this collection"
+policy:
+  allow_implicit_invocation: false

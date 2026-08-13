@@ -43,13 +43,13 @@ npx skills@latest add fancy1108/fancy-skills
 
 按需勾选技能，以及要装到哪些编程代理上。
 
-### 2. 可选：`/connect`
+### 2. 可选：`/fancy-init`
 
-如果某个项目要共用这套集合的议题跟踪、领域文档和 Cursor 规则，在该仓库跑一次 `/connect`。以后再跑是更新已有文件，不会再追加一段。
+如果某个项目要按 Fancy 的规范初始化（议题跟踪、领域文档、Cursor 规则），在该工作区跑一次 `/fancy-init`。以后再跑是更新已有文件，不会再追加一段。
 
 ### 3. 看看有什么
 
-运行 `/catalog` 列出这套集合里的技能。
+运行 `/fancy-discover` 探索这套集合里的技能。
 
 ## 这套集合里有什么
 
@@ -59,8 +59,8 @@ npx skills@latest add fancy1108/fancy-skills
 
 **用户触发**
 
-- **[catalog](./skills/engineering/catalog/SKILL.md)** — 列出这套集合里有什么，以及该用哪条。
-- **[connect](./skills/engineering/connect/SKILL.md)** — 把当前项目接到这套集合上：议题跟踪、领域文档、Cursor 规则。
+- **[fancy-discover](./skills/engineering/fancy-discover/SKILL.md)** — 探索本仓库里有哪些技能，以及该用哪条。
+- **[fancy-init](./skills/engineering/fancy-init/SKILL.md)** — 按 Fancy 的规范初始化当前工作区：议题跟踪、领域文档、Cursor 规则。
 
 **模型触发**
 

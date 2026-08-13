@@ -1,12 +1,12 @@
 ---
-name: connect
-description: Wire this repo into the collection — issue tracker, domain docs, and Cursor rules. Run once per project if you want those conventions.
+name: fancy-init
+description: Initialize this workspace with Fancy's conventions — issue tracker, domain docs, and Cursor rules.
 disable-model-invocation: true
 ---
 
-# Connect
+# Fancy Init
 
-Write the per-repo files this collection expects when a skill needs a shared issue tracker or glossary:
+Initialize the current workspace using Fancy's standards. Write the per-repo files this collection expects when a skill needs a shared issue tracker or glossary:
 
 - **Issue tracker** — where issues live (GitHub by default; local markdown is also supported)
 - **Domain docs** — where `CONTEXT.md` and ADRs live, and the consumer rules for reading them
@@ -152,4 +152,4 @@ Use the actual choice strings. Omit `triage` from this file unless Section B ran
 
 ### 5. Done
 
-Tell the user connect is complete (or reconfigured) and which files were written. Mention they can edit `docs/agents/*.md` directly later — re-running this skill is only necessary to switch trackers, change domain layout, or repair a missing `setup-state.json`.
+Tell the user init is complete (or reconfigured) and which files were written. Mention they can edit `docs/agents/*.md` directly later — re-running this skill is only necessary to switch trackers, change domain layout, or repair a missing `setup-state.json`.

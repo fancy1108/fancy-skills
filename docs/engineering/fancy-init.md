@@ -1,12 +1,12 @@
-# Connect
+# Fancy Init
 
 ## What it does
 
-Connect writes the per-repo files this collection uses for a shared issue tracker, domain glossary, and Cursor rules. Completion is recorded in `docs/agents/setup-state.json` — re-running updates existing files; it does not append a second `## Agent skills` block.
+Fancy Init initializes the current workspace using Fancy's standards: a shared issue tracker, domain glossary, and Cursor rules. Completion is recorded in `docs/agents/setup-state.json` — re-running updates existing files; it does not append a second `## Agent skills` block.
 
 ## When to reach for it
 
-You invoke this by typing `/connect` — the agent won't reach for it on its own.
+You invoke this by typing `/fancy-init` — the agent won't reach for it on its own.
 
 Reach for this once per project if you want those conventions, or later to switch trackers or repair a missing `setup-state.json`.
 
@@ -30,4 +30,4 @@ No. It writes `.cursor/rules/fancy-skills.mdc` that *points at* `docs/agents/*.m
 
 ## Where it fits
 
-Optional **run-once** wiring for a consuming repo. Neighbour: `/catalog`, which lists the rest of the collection.
+Optional **run-once** init for a consuming repo. Neighbour: `/fancy-discover`, which lists the rest of the collection.

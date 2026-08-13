@@ -1,3 +1,3 @@
 # Misc
 
-Kept around but rarely used. Not promoted — not in the plugin, not in `/catalog`.
+Kept around but rarely used. Not promoted — not in the plugin, not in `/fancy-discover`.

@@ -1,6 +1,6 @@
 # Productivity
 
-Daily non-code workflow tools. Promoted — listed in the plugin and `/catalog` when skills exist.
+Daily non-code workflow tools. Promoted — listed in the plugin and `/fancy-discover` when skills exist.
 
 ## User-invoked
 
