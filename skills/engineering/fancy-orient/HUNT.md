@@ -4,6 +4,8 @@ Search for what is broken. Prefer recent posts (last 1–2 years from **today's 
 
 Do not put a calendar year in the query unless you already know today's date. Never default to 2024.
 
+Run `scripts/hunt.py`, not Claude `WebSearch`. Put `site:reddit.com` / `site:zhihu.com` / `site:v2ex.com` in the query so the results are complaints, not SEO.
+
 ## Pain
 
 - "I hate that [category] …"

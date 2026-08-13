@@ -24,14 +24,14 @@ If you can already say who / how painful / why now in your own words, skip resea
 **Can the agent invent the three answers?**
 No. It may propose from the evidence; you confirm. Unconfirmed answers do not open the gate.
 
-**Search said 0 results / API Error, then a polished table appeared.**
-The Claude Code web-search tool often fails with `Content block not found` (client bug — the query never ran). The agent must not fill the table from memory. If it does, treat those citations as unverified.
+**Search said 0 results / API Error: Content block not found.**
+Claude Code `WebSearch` is an Anthropic server tool. It does not run on a third-party `ANTHROPIC_BASE_URL`. Orient hunts with `scripts/hunt.py` (local Bing HTML) instead. Do not retry `WebSearch`.
 
 ## It's working if
 
 - The first question (if intent is unknown) is only "what do you want to make?" — not a pain interview.
 - Research in that domain appears **before** the three questions, unless the skip rule hit.
-- Pain quotes have URLs the search tool actually returned. A failed search does not become a "domain knowledge" table.
+- Pain quotes have URLs `scripts/hunt.py` actually returned. A failed hunt does not become a "domain knowledge" table.
 - The three answers are in the user's words, in `proposal.md`.
 - MVP is one capability and Non-Goals are written.
 - `git init` did not run.

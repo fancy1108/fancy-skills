@@ -32,11 +32,17 @@ description: >-
 
 ## 调研（第 1 步）
 
-不要搜「什么点子好」。搜「什么东西烂」。用网页搜索。引用真实抱怨（**工具返回的 URL** + 一句）。禁止编造帖子。
+不要搜「什么点子好」。搜「什么东西烂」。引用真实抱怨（**这次打猎返回的 URL** + 一句）。禁止编造帖子。
+
+**不要用 Claude Code 的 `WebSearch` 或 `WebFetch`。** 那是 Anthropic 服务端工具。走代理（`ANTHROPIC_BASE_URL` 不是 api.anthropic.com）时只会得到 `Did 0 searches` 和 `API Error: Content block not found`。改成本地打猎：
+
+```bash
+python3 <本技能>/scripts/hunt.py "检索句一" "检索句二"
+```
+
+脚本就在这份 `SKILL.md` 旁边（安装后：`.claude/skills/fancy-orient/scripts/hunt.py`）。跑 **2–3 条查询** 就停。报错或 0 行，告诉用户。**不要**再试 `WebSearch`。**不要**用「领域知识」填痛点表。
 
 **日期：** 搜之前先知道今天（harness 的「Today's date」，或跑 `date`）。禁止猜年份。查询里不要写 `2024` 或任何过期年份。需要「最近」就用今年和去年，或者干脆不写年份。
-
-**搜索失败**（`Did 0 searches`、`API Error: Content block not found`、抓取被拦）：只再试 **一次**。还失败就停。告诉用户搜索工具没跑起来。**不要**用「领域知识」填一张痛点/竞品表，再当成调研交出来。工具没返回的来源一律不许写。可以请他们贴链接，或继续但每条标成 **不是搜来的**。harness 拦 `reddit.com` 就不要 `Fetch`，只用真正返回了的摘要。
 
 | 他们有什么 | 你做什么 |
 | --- | --- |

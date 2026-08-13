@@ -34,11 +34,17 @@ Do **not** skip because they named a product or said they already know what they
 
 ## Research (step 1)
 
-Don't search for "what idea is good". Search for "what is broken". Use web search. Quote real complaints (**URL the tool returned** + one line). No invented Reddit posts.
+Don't search for "what idea is good". Search for "what is broken". Quote real complaints (**URL this hunt returned** + one line). No invented Reddit posts.
+
+**Do not use Claude Code `WebSearch` or `WebFetch`.** They are Anthropic server tools. On a proxy (`ANTHROPIC_BASE_URL` ≠ api.anthropic.com) they print `Did 0 searches` and `API Error: Content block not found`. Hunt locally instead:
+
+```bash
+python3 <this-skill>/scripts/hunt.py "query one" "query two"
+```
+
+The script lives next to this `SKILL.md` (installed copies: `.claude/skills/fancy-orient/scripts/hunt.py`). Run **2–3 queries**, then stop. If it errors or returns 0 rows, tell the user. Do **not** retry `WebSearch`. Do **not** fill a pain table from "domain knowledge".
 
 **Date:** Know today's date before you search (the harness "Today's date", or run `date`). Never guess a year. Do not put `2024` (or any stale year) in the query. If you need recency, use the current year and the previous year, or omit the year.
-
-**If search fails** (`Did 0 searches`, `API Error: Content block not found`, fetch blocked): retry **once**. If it still fails, stop. Tell the user the search tool did not run. Do **not** write a pain/competitor table from "domain knowledge" and present it as research. No source you did not get back from the tool. Offer: they paste links, or continue with guesses labeled **not from search**. Do not `Fetch` reddit.com if the harness blocks it — stay on snippets that actually returned.
 
 | They have | You do |
 | --- | --- |

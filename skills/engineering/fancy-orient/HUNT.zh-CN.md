@@ -4,6 +4,8 @@
 
 查询里不要写日历年份，除非你已经知道今天是哪年。永远不要默认 2024。
 
+用 `scripts/hunt.py`，不要用 Claude 的 `WebSearch`。检索句里带上 `site:zhihu.com` / `site:v2ex.com` / `site:reddit.com`，否则会搜到一堆减肥软文。
+
 ## 痛
 
 - 「我讨厌现在的 [品类] …」
