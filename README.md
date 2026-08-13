@@ -43,6 +43,20 @@ npx skills@latest add fancy1108/fancy-skills
 
 Pick the skills you want, and which coding agents to install them on.
 
+Skill instructions load in **English** by default. `npx skills` cannot ask this. After install, switch to Simplified Chinese:
+
+```
+/fancy-locale
+```
+
+Or:
+
+```bash
+bash .claude/skills/fancy-locale/scripts/set-locale.sh zh-CN
+```
+
+Some agents copy into `.agents/skills` — use that path if `.claude/skills` is missing. **Start a new chat** after switching.
+
 ### 2. Optional: `/fancy-init`
 
 If a project should use Fancy's conventions (issue tracker, domain docs, Cursor rules), run `/fancy-init` once in that workspace. Later runs update the existing files instead of appending.
@@ -63,6 +77,7 @@ These split on one axis — who can invoke them. **User-invoked** skills are rea
 
 - **[fancy-discover](./skills/engineering/fancy-discover/SKILL.md)** — Discover the skills in this collection and which one to reach for.
 - **[fancy-init](./skills/engineering/fancy-init/SKILL.md)** — Initialize this workspace with Fancy's conventions — issue tracker, domain docs, and Cursor rules.
+- **[fancy-locale](./skills/engineering/fancy-locale/SKILL.md)** — Switch installed skill bodies between English (default) and Simplified Chinese.
 
 **Model-invoked**
 

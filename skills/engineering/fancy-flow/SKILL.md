@@ -45,7 +45,7 @@ Look at the workspace. Run **one** next stage. Stay in-session until that stage 
 | User wants to skip to code | Refuse until the **shape gate** is complete (and orient before that) |
 | Small bugfix / one-file fix and they did **not** ask to continue the product | Decline the pipeline. Do not start orient |
 
-Never invoke user-invoked skills (`/fancy-discover`, `/fancy-init`). Shape does its own repo init.
+Never invoke user-invoked skills (`/fancy-discover`, `/fancy-init`, `/fancy-locale`). Shape does its own repo init.
 
 If a helper named in someone's notes is not in this collection, **do the work inside the current stage**. Do not invent a missing skill.
 

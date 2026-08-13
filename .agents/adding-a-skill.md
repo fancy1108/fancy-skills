@@ -2,12 +2,12 @@
 
 Promoted skills (`engineering/` or `productivity/`) are the ones that ship. Follow this order so the install list and the router cannot drift.
 
-1. Create `skills/<bucket>/<name>/` with `SKILL.md` and `agents/openai.yaml`. See [invocation.md](./invocation.md).
+1. Create `skills/<bucket>/<name>/` with `SKILL.md`, `SKILL.zh-CN.md` (Simplified Chinese body, no mixed language), and `agents/openai.yaml`. See [invocation.md](./invocation.md). Companion files the skill links (`INIT.md`, …) get a matching `*.zh-CN.md`.
 2. Add a one-line entry to `skills/<bucket>/README.md`, linking the name to `./<name>/SKILL.md`, under **User-invoked** or **Model-invoked**.
 3. Add a docs page at `docs/<bucket>/<name>.md` (promoted buckets only).
 4. Append the skill path to `.claude-plugin/plugin.json` `skills` (for example `./skills/engineering/<name>`). This array is the **single source of truth** for what ships.
 5. Add the same skill to the Reference section in both `README.md` (English) and `README.zh-CN.md` (Chinese), linking to its `SKILL.md`.
-6. Run `scripts/build-router.sh`. It rewrites the generated inventory in `skills/engineering/fancy-discover/SKILL.md` from `plugin.json` + each skill's frontmatter. **Do not edit that inventory by hand.**
+6. Run `scripts/build-router.sh`. It rewrites the generated inventory in `skills/engineering/fancy-discover/SKILL.md` **and** `SKILL.zh-CN.md` from `plugin.json` + each skill's frontmatter. **Do not edit those inventories by hand.**
 7. If `fancy-discover`'s handwritten map needs a new flow (not just a new list row), edit the prose **outside** the `BEGIN/END GENERATED INVENTORY` markers.
 8. Run `scripts/build-router.sh --check` to confirm the generated section matches.
 

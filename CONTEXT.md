@@ -39,6 +39,9 @@ The interactive contract produced (or audited) by `/fancy-shape`. From scratch: 
 **Pipeline**:
 `/fancy-flow` is the intent-triggered assembler. It dispatches `/fancy-orient` → `/fancy-shape` → `/fancy-build` → `/fancy-harden` → `/fancy-ship`. It must not run on one-shot questions.
 
+**Locale**:
+Installed skill bodies. Default **English** (`SKILL.md`). Simplified Chinese lives in `SKILL.zh-CN.md` until `/fancy-locale` copies it onto the installed `SKILL.md`.
+
 **In-progress**:
 A skill or backlog row under `skills/in-progress/`. Public, not promoted. `/fancy-discover` must not list it. A stub must refuse to run.
 
@@ -50,3 +53,4 @@ A skill or backlog row under `skills/in-progress/`. Public, not promoted. `/fanc
 - `/fancy-flow` runs stage skills in order until the current **gate** is done
 - `/fancy-shape` produces the **High-fidelity prototype** as part of the **Shape gate**
 - An **In-progress** row is not a **Promoted skill**
+- `/fancy-locale` switches **Locale** on installed copies only

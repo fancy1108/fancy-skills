@@ -48,3 +48,19 @@ npx skills@latest add fancy1108/fancy-skills --skill=fancy-discover
 ```bash
 npx skills@latest update fancy-discover
 ```
+
+## Language
+
+Skill instructions load in **English** by default. `npx skills` cannot ask this. After install, switch to Simplified Chinese:
+
+```
+/fancy-locale
+```
+
+Or:
+
+```bash
+bash .claude/skills/fancy-locale/scripts/set-locale.sh zh-CN
+```
+
+Some agents copy into `.agents/skills` — use that path if `.claude/skills` is missing. **Start a new chat** after switching.

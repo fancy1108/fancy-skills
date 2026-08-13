@@ -35,7 +35,7 @@ Don't search for "what idea is good". Search for "what is broken". Use web searc
 
 | They have | You do |
 | --- | --- |
-| **No idea** | Pick one hunter path: **Pain** (real complaints), **Gap** (1-star reviews / Feature Requests that sat for years), or **Edge** (new model/API + old job). Open-ended hunt. |
+| **No idea** | Do **not** wait for a seed. One line: you can name a domain to narrow, otherwise hunting starts now. Pick one hunter path: **Pain** (real complaints), **Gap** (1-star reviews / Feature Requests that sat for years), or **Edge** (new model/API + old job). Search immediately. |
 | **A seed** (a name or a category) | Hunt **that domain**. Existing apps' 1-star reviews, "I hate that…", "why isn't there a tool that does A and B". Do not wander into an unrelated field. |
 
 Then show, in the draft environment (chat or a note they name — still no git repo):

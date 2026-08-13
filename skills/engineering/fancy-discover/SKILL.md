@@ -13,6 +13,7 @@ This is Fancy's personal skill collection — skills in daily use, plus ones wor
 Housekeeping for a consuming repo:
 
 - **`/fancy-init`** — initialize this workspace with Fancy's conventions (issue tracker, domain docs, Cursor rules). Idempotent: `docs/agents/setup-state.json` records completion, so a later run updates instead of appending.
+- **`/fancy-locale`** — skill bodies default to English; switch to Simplified Chinese. Start a new chat after switching.
 
 Product pipeline (intent-triggered — the agent reaches these when you start a product or say continue, not on ordinary Q&A):
 
@@ -36,6 +37,7 @@ This list is generated from `.claude-plugin/plugin.json`. Do not edit it by hand
 
 - **`/fancy-discover`** — Discover the skills in this collection and which one to reach for.
 - **`/fancy-init`** — Initialize this workspace with Fancy's conventions — issue tracker, domain docs, and Cursor rules.
+- **`/fancy-locale`** — Switch this collection between English (default) and Simplified Chinese skill instructions.
 
 **Model-invoked**
 
@@ -58,5 +60,6 @@ This list is generated from `.claude-plugin/plugin.json`. Do not edit it by hand
 | Test / acceptance feels wrong | `/fancy-harden` |
 | Deploy / close the iteration | `/fancy-ship` |
 | This project has no `docs/agents/setup-state.json` and a skill needs a tracker or glossary | `/fancy-init` |
+| Switch skill instructions to Chinese or back to English | `/fancy-locale` |
 | "What's in this collection?" | You are already here |
 | A skill that is not listed | Say it is not here yet |

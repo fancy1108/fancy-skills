@@ -20,6 +20,8 @@ Skills in `engineering/` and `productivity/` also have a human-facing docs page 
 
 Every `SKILL.md` is either user-invoked (`disable-model-invocation: true` plus `policy.allow_implicit_invocation: false` in `agents/openai.yaml`) or model-invoked. See [`.agents/invocation.md`](.agents/invocation.md).
 
+`SKILL.md` is English (the default the harness loads). Promoted skills also ship `SKILL.zh-CN.md` (Simplified Chinese, same structure, no mixed language). Consumers switch with `/fancy-locale` or `scripts/set-locale.sh`; that copies onto installed `SKILL.md` and does not rewrite git sources. Companion files the skill links (`INIT.md`, `HUNT.md`, …) follow the same `*.zh-CN.md` pair.
+
 [`fancy-discover`](./skills/engineering/fancy-discover/SKILL.md) is the index of this collection. Its **Available skills** section is generated — never edit it by hand. After adding, renaming, or removing a promoted skill, update `.claude-plugin/plugin.json` and the bucket `README.md`, then run `scripts/build-router.sh`. See [`.agents/adding-a-skill.md`](.agents/adding-a-skill.md).
 
 To (re)link every skill into local harness directories (`~/.claude/skills`, `~/.agents/skills`, `~/.cursor/skills`), run `scripts/link-skills.sh`.

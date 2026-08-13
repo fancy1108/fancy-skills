@@ -43,6 +43,20 @@ npx skills@latest add fancy1108/fancy-skills
 
 按需勾选技能，以及要装到哪些编程代理上。
 
+技能说明**默认英文**。`npx skills` 无法在安装界面里问这个。装完后切到简体中文：
+
+```
+/fancy-locale
+```
+
+或：
+
+```bash
+bash .claude/skills/fancy-locale/scripts/set-locale.sh zh-CN
+```
+
+有的代理会拷到 `.agents/skills` — 若没有 `.claude/skills` 就用那条路径。切换后请**新开一条对话**。
+
 ### 2. 可选：`/fancy-init`
 
 如果某个项目要按 Fancy 的规范初始化（议题跟踪、领域文档、Cursor 规则），在该工作区跑一次 `/fancy-init`。以后再跑是更新已有文件，不会再追加一段。
@@ -63,6 +77,7 @@ npx skills@latest add fancy1108/fancy-skills
 
 - **[fancy-discover](./skills/engineering/fancy-discover/SKILL.md)** — 探索本仓库里有哪些技能，以及该用哪条。
 - **[fancy-init](./skills/engineering/fancy-init/SKILL.md)** — 按 Fancy 的规范初始化当前工作区：议题跟踪、领域文档、Cursor 规则。
+- **[fancy-locale](./skills/engineering/fancy-locale/SKILL.md)** — 把已安装技能说明在英文（默认）和简体中文之间切换。
 
 **模型触发**
 

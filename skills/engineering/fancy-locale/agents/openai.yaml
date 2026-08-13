@@ -1,0 +1,5 @@
+interface:
+  display_name: "Fancy Locale"
+  short_description: "English or Simplified Chinese skill bodies"
+policy:
+  allow_implicit_invocation: false

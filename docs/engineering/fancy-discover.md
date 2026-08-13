@@ -20,7 +20,10 @@ None. If a project needs tracker or glossary files, Fancy Discover will point yo
 This is a personal collection. Skills land here when Fancy uses them or decides they are worth keeping. The inventory is generated from `.claude-plugin/plugin.json`, so it cannot claim skills that do not ship.
 
 **Can I edit the inventory in SKILL.md?**
-No. Change `plugin.json` and run `scripts/build-router.sh`.
+No. Change `plugin.json` and run `scripts/build-router.sh` (it also fills `SKILL.zh-CN.md`).
+
+**How do I get Chinese instructions?**
+`/fancy-locale` after install. Default is English.
 
 ## It's working if
 

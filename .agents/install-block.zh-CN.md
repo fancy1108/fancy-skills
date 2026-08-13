@@ -48,3 +48,19 @@ npx skills@latest add fancy1108/fancy-skills --skill=fancy-discover
 ```bash
 npx skills@latest update fancy-discover
 ```
+
+## 语言
+
+技能说明**默认英文**。`npx skills` 无法在安装界面里问这个。装完后切到简体中文：
+
+```
+/fancy-locale
+```
+
+或：
+
+```bash
+bash .claude/skills/fancy-locale/scripts/set-locale.sh zh-CN
+```
+
+有的代理会拷到 `.agents/skills` — 若没有 `.claude/skills` 就用那条路径。切换后请**新开一条对话**。
