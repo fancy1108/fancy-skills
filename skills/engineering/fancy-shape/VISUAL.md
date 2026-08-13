@@ -10,6 +10,8 @@ From the proposal's vibe words, offer **three** visual directions. Each has: a n
 
 Wait for the user to pick (or mix). A vibe adjective is not a pick.
 
+They can take the pick back later ("change the look"). Re-offer three directions. The demo becomes a draft.
+
 ## 2. `design.md`
 
 Keep it short. Must include:

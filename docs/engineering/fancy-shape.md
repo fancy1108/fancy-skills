@@ -31,6 +31,7 @@ No. Shape inits the product repo itself. `/fancy-init` is the optional conventio
 - Three visual directions appeared before `design.md` on a UI product.
 - A UI product has a clickable high-fidelity artifact (or the user's existing one) **that they accepted** before `contract.ts` / `tasks.md`.
 - `/fancy-build` is still blocked until the gate is green.
+- Saying Mini should have been Pro (or any earlier pick) rewinds that lock; it does not start a new product.
 
 ## Where it fits
 

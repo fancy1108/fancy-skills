@@ -92,6 +92,8 @@ Use the sections in [PROPOSAL.md](PROPOSAL.md). Fill Pitch, Problem, Tension, Go
 
 The file is a draft until they accept it. After writing, recap **Pitch, the one MVP, Non-Goals** in chat. Ask: is this right? What should change? Do not tell `/fancy-flow` the handshake is done, and do not start `/fancy-shape`, until they say the proposal is right (or they name edits and you apply them and ask again).
 
+An accepted proposal can be taken back. If they say it is wrong later, it is a draft again. Edit, wait for accept, then ask `/fancy-flow` which later artifacts to redo. Do not restart hunting unless they also want a new category.
+
 ## Done when
 
 - [ ] Research (or the skip rule) happened **before** the three questions

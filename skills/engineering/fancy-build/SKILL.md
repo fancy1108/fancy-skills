@@ -34,6 +34,8 @@ Do not edit `specs/` to make a check pass. If the contract is wrong, stop and se
 5. One commit for that task if git exists (Conventional Commits). Mark the row done. Append one line to `memory/PROGRESS.md` if Mini+ exists. Record a pit in `FAILURES.md` if you hit one.
 6. Next row, or **check-out** if the user pauses: working tree clean, PROGRESS says what is left and what is next.
 
+If they want a **done** row redone, uncheck it and take that row. That is a rewind, not a new feature.
+
 ## Done when
 
 No open tasks remain, or the user pauses after check-out. Tell `/fancy-flow`. **Stop.** Do not start `/fancy-harden` in the same turn. Do not announce "the app is done" without `/fancy-harden`.

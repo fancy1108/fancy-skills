@@ -48,6 +48,8 @@ This is a **core contract**, same rank as `design.md` and `tasks.md`. Later code
 
 Pick the branch from what the user actually has. Do not run 4 + 5 and 5.5.
 
+If they name an earlier lock (wrong proposal, change the demo, redo tasks), rewind — do not keep walking this sequence. `/fancy-flow` owns the rewind map.
+
 ## Sequence (do not reorder)
 
 1. **Init (step 3)** — [INIT.md](INIT.md). Paste Micro / Mini / Pro as labeled options (table or A/B/C), then you may recommend one. Default Mini only if they shrug after seeing all three. Confirm stack, start command, and agent the same way. Then `git init`, move `proposal.md`, short `CLAUDE.md`, first commit. Empty shell only.

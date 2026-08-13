@@ -27,6 +27,21 @@ Forbidden: "This is a personal tool, I suggest Mini, confirm?" — they never le
 
 Stack, start command, and persistence follow the same rule: labeled options first, recommendation second. Do not lock a stack with a yes/no on a single pick.
 
+After they pick a tier, write `Repo tier: Micro|Mini|Pro` as one line in `CLAUDE.md`.
+
+## Change tier later
+
+Natural language ("make it Pro", "this should be Mini") is a rewind, not a new product. Do not `git init` again. Do not redo the proposal.
+
+| From → to | Do |
+| --- | --- |
+| Micro → Mini / Pro | Add the files that tier needs. Keep existing `CLAUDE.md` |
+| Mini → Pro | Add empty `memory/{FAILURES,ARCHITECTURE,DECISIONS,ROADMAP,TESTS}.md` if missing, empty `.claude/` / `.cursor/` / `runs/`. Ask before `docs/document-governance.md` |
+| Pro → Mini / Micro | Stop creating Pro-only files. **Do not delete** filled `memory/` notes |
+| Any → same | Say it already is. Stop |
+
+Update the `Repo tier:` line. Then return to the stage they were in.
+
 ## Move the proposal
 
 - Single product (default): `proposal.md` → `specs/core/proposal.md`

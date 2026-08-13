@@ -37,7 +37,7 @@ The test-contract from shape is the exam paper. Do not write a new suite that on
 
 ## Drift (step 8.5)
 
-When acceptance does not match intent, do not introspect. Physical diagnosis **before** any edit:
+When acceptance does not match intent, do not introspect. Physical diagnosis **before** any edit. This is also the rewind target when they say the product "isn't what we said".
 
 1. Read `proposal.md` and `design.md` (and the prototype) for the feature — quote the lines.
 2. Diff the implementation against that text.

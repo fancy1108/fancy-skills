@@ -38,7 +38,7 @@ Update only files that exist; do not invent a six-pack on a Micro repo.
 4. Next iteration from usage, not from leftover idea lists
 5. Keep `CLAUDE.md` as routing + iron rules only
 
-**Name the next start** (write it in PROGRESS):
+**Name the next start** (write it in PROGRESS). Any earlier lock can also rewind mid-pipeline — `/fancy-flow` rewind map, not only after ship:
 
 | Change | Next stage |
 | --- | --- |

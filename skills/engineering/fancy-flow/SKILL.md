@@ -45,6 +45,7 @@ A file on disk is a **draft**. It is not acceptance.
 | Tasks done, they said continue, no physical verification / drift still open | `/fancy-harden` |
 | Hardened, they used it, not shipped | `/fancy-ship` — after they say yes to the ship plan |
 | User wants to skip to code | Refuse until the **shape gate** is complete (and orient before that) |
+| They name an earlier lock in natural language (wrong tier, wrong proposal, redo the demo, …) | **Rewind** to that lock. Do not restart from step 1 |
 | Small bugfix / one-file fix and they did **not** ask to continue the product | Decline the pipeline. Do not start orient |
 
 ## Human locks (do not skip)
@@ -63,6 +64,26 @@ Stop. Ask one question. Wait for the reply. Then either edit or proceed.
 | Ship plan | Deploy / local-only — yes? | yes |
 
 Forbidden: write `proposal.md` then immediately run `/fancy-shape`. Forbidden: write `demo.html` then immediately write `contract.ts`. Forbidden: declare shape complete and start `/fancy-build` in the same turn.
+
+## Rewind (any lock, any time)
+
+Accepted is not permanent. Natural language that names an earlier decision **goes back to that lock**. Do not replay the whole pipeline. Smallest patch. Re-show that lock's menu if it had one. Then return to where they were, unless a later draft is now invalid — mark it draft again and re-ask that lock.
+
+| They say (examples) | Lock to reopen | Do |
+| --- | --- | --- |
+| Idea changed / wrong category / hunt again | Orient research | Hunt again. `proposal.md` is a draft |
+| Proposal is wrong / MVP wrong / redo the three questions | Orient proposal | Edit, wait for accept. Ask which shape artifacts to redo |
+| Make it Pro / Mini / Micro | Shape init (tier) | `/fancy-shape` init: add or stop files for the new tier. No second `git init`. Keep the proposal |
+| Change stack / persistence / agent | Shape init (stack) | Update `CLAUDE.md` start command. If business code exists, do not rewrite the app until they confirm |
+| Change the look / ugly | Shape visual | Re-offer three directions. Demo becomes a draft |
+| Prototype is wrong / change the demo | Shape contract | Revise demo, wait, update `contract.ts` if names changed |
+| Split is wrong / tasks are wrong | Shape split | Edit `tasks.md`, wait for accept |
+| Redo this task / this feature is wrong | Build that row | Reopen the row. Do not batch |
+| Feels wrong / not what we said | Harden | Physical diagnosis (step 8.5) |
+| Don't ship / local-only instead | Ship plan | Re-ask deploy vs local-only |
+| Scrap the direction, start over | Orient intent | Full rewind. Do not delete the repo unless they ask |
+
+If two locks could match, ask **one** question: which decision are they taking back? Then rewind.
 
 Never invoke user-invoked skills (`/fancy-discover`, `/fancy-init`, `/fancy-locale`). Shape does its own repo init.
 

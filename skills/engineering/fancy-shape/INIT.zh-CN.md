@@ -27,6 +27,21 @@
 
 技术栈、启动命令、持久化同一条：先给带标签的选项，再给推荐。不要拿「就用这个，确认？」锁定技术栈。
 
+他们选定档次后，在 `CLAUDE.md` 写一行 `Repo tier: Micro|Mini|Pro`。
+
+## 之后改档次
+
+自然语言（「改成 Pro」「这应该是 Mini」）是回退，不是新产品。不要再 `git init`。不要重写提案。
+
+| 从 → 到 | 做什么 |
+| --- | --- |
+| Micro → Mini / Pro | 补该档次该有的文件。留下现有 `CLAUDE.md` |
+| Mini → Pro | 缺的就补空的 `memory/{FAILURES,ARCHITECTURE,DECISIONS,ROADMAP,TESTS}.md`，空的 `.claude/` / `.cursor/` / `runs/`。`docs/document-governance.md` 先问 |
+| Pro → Mini / Micro | 不再创建 Pro 才有的文件。**不要删**已经写过的 `memory/` |
+| 改到现在已经是的档次 | 说已经是了。停 |
+
+更新 `Repo tier:` 那一行。然后回到他们原来的阶段。
+
 ## 搬提案
 
 - 单一产品（默认）：`proposal.md` → `specs/core/proposal.md`

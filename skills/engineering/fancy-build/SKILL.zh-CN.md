@@ -32,6 +32,8 @@ description: >-
 5. 有 git 就为这一条单独提交（Conventional Commits）。把该行标完成。Mini+ 则在 `memory/PROGRESS.md` 追加一行。踩坑写入 `FAILURES.md`。
 6. 下一条，或用户暂停时做 **check-out**：工作区干净，PROGRESS 写清还剩什么、下一步是什么。
 
+他们要把一条**已完成**的任务重做：把该行取消勾选再领。这是回退，不是新功能。
+
 ## 完成标准
 
 没有未完成任务，或用户在 check-out 后暂停。告诉 `/fancy-flow`。**停。** 不要在同一轮里开始 `/fancy-harden`。没有 `/fancy-harden` 就不要宣布「应用做完了」。

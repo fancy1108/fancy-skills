@@ -33,6 +33,7 @@ Claude Code `WebSearch` is an Anthropic server tool. It does not run on a third-
 - Research in that domain appears **before** the three questions, unless the skip rule hit.
 - Pain quotes have URLs `scripts/hunt.py` actually returned. A failed hunt does not become a "domain knowledge" table.
 - The three answers are in the user's words, in `proposal.md`, **and they accepted that file**.
+- Taking the proposal back later re-opens orient; it does not `git init` a new repo.
 - MVP is one capability and Non-Goals are written.
 - `git init` did not run.
 
