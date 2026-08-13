@@ -1,11 +1,11 @@
 # Engineering
 
-Daily code work. Promoted — listed in the plugin and `/ask-fancy`.
+Daily code work. Promoted — listed in the plugin and `/catalog`.
 
 ## User-invoked
 
-- **[ask-fancy](./ask-fancy/SKILL.md)** — Ask which skill or flow fits your situation. A router over the skills in this repo.
-- **[setup-fancy-skills](./setup-fancy-skills/SKILL.md)** — Configure this repo for fancy-skills — issue tracker, domain doc layout, and Cursor rules.
+- **[catalog](./catalog/SKILL.md)** — Show what's in this collection and which skill to reach for.
+- **[connect](./connect/SKILL.md)** — Wire this repo into the collection — issue tracker, domain docs, and Cursor rules.
 
 ## Model-invoked
 

@@ -1,12 +1,12 @@
 ---
-name: setup-fancy-skills
-description: Configure this repo for fancy-skills — issue tracker, domain doc layout, and Cursor rules. Run once before using the other engineering skills.
+name: connect
+description: Wire this repo into the collection — issue tracker, domain docs, and Cursor rules. Run once per project if you want those conventions.
 disable-model-invocation: true
 ---
 
-# Setup Fancy Skills
+# Connect
 
-Scaffold the per-repo configuration that the engineering skills assume:
+Write the per-repo files this collection expects when a skill needs a shared issue tracker or glossary:
 
 - **Issue tracker** — where issues live (GitHub by default; local markdown is also supported)
 - **Domain docs** — where `CONTEXT.md` and ADRs live, and the consumer rules for reading them
@@ -152,4 +152,4 @@ Use the actual choice strings. Omit `triage` from this file unless Section B ran
 
 ### 5. Done
 
-Tell the user setup is complete (or reconfigured) and which files were written. Mention they can edit `docs/agents/*.md` directly later — re-running this skill is only necessary to switch trackers, change domain layout, or repair a missing `setup-state.json`.
+Tell the user connect is complete (or reconfigured) and which files were written. Mention they can edit `docs/agents/*.md` directly later — re-running this skill is only necessary to switch trackers, change domain layout, or repair a missing `setup-state.json`.

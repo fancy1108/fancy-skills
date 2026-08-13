@@ -37,14 +37,14 @@ claude plugin install fancy-skills@fancy
 npx skills@latest add fancy1108/fancy-skills
 ```
 
-按需勾选技能，以及要装到哪些编程代理上。**请确保勾选了 `setup-fancy-skills`。**
+按需勾选技能，以及要装到哪些编程代理上。
 
 单条技能：
 
 ```bash
-npx skills@latest add fancy1108/fancy-skills --skill=setup-fancy-skills
+npx skills@latest add fancy1108/fancy-skills --skill=catalog
 ```
 
 ```bash
-npx skills@latest update setup-fancy-skills
+npx skills@latest update catalog
 ```

@@ -37,14 +37,14 @@ claude plugin install fancy-skills@fancy
 npx skills@latest add fancy1108/fancy-skills
 ```
 
-Pick the skills you want, and which coding agents to install them on. **Make sure `setup-fancy-skills` is one of them.**
+Pick the skills you want, and which coding agents to install them on.
 
 Single-skill form:
 
 ```bash
-npx skills@latest add fancy1108/fancy-skills --skill=setup-fancy-skills
+npx skills@latest add fancy1108/fancy-skills --skill=catalog
 ```
 
 ```bash
-npx skills@latest update setup-fancy-skills
+npx skills@latest update catalog
 ```

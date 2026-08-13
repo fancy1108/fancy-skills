@@ -13,4 +13,4 @@ Bucket `README.md`s and `README.md` group entries into **User-invoked** and **Mo
 
 ## Dependencies between them
 
-Dependencies are expressed as **`/skill`-style prose invocation** ("Run the `/setup-fancy-skills` skill"), not deep `../other-skill/FILE.md` cross-references. Shared reference docs live inside the skill that owns them; other skills reach that material by invoking the skill, not by linking across folders.
+Dependencies are expressed as **`/skill`-style prose invocation** ("Run the `/connect` skill"), not deep `../other-skill/FILE.md` cross-references. Shared reference docs live inside the skill that owns them; other skills reach that material by invoking the skill, not by linking across folders.

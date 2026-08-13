@@ -1,5 +1,0 @@
-interface:
-  display_name: "Setup Fancy Skills"
-  short_description: "Configure tracker, domain docs, Cursor rules"
-policy:
-  allow_implicit_invocation: false

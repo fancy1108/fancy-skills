@@ -1,7 +1,7 @@
 {
   "name": "fancy-skills",
   "version": "0.1.0",
-  "description": "Fancy's agent skills — small, owned, composable. Setup, routing, and the forge they live in.",
+  "description": "Fancy's personal agent skills — originals plus a curated set.",
   "author": {
     "name": "fancy1108",
     "url": "https://github.com/fancy1108"
@@ -11,12 +11,11 @@
   "license": "MIT",
   "keywords": [
     "skills",
-    "engineering",
-    "setup",
-    "router"
+    "personal",
+    "catalog"
   ],
   "skills": [
-    "./skills/engineering/ask-fancy",
-    "./skills/engineering/setup-fancy-skills"
+    "./skills/engineering/catalog",
+    "./skills/engineering/connect"
   ]
 }

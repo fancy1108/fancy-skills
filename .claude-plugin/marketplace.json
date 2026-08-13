@@ -4,18 +4,17 @@
     "name": "fancy1108",
     "url": "https://github.com/fancy1108"
   },
-  "description": "Fancy's agent skills — small, owned, composable.",
+  "description": "Fancy's personal agent skills — originals plus a curated set.",
   "plugins": [
     {
       "name": "fancy-skills",
       "source": "./",
-      "description": "Fancy's agent skills — small, owned, composable. Setup, routing, and the forge they live in.",
+      "description": "Fancy's personal agent skills — originals plus a curated set.",
       "category": "development",
       "keywords": [
         "skills",
-        "engineering",
-        "setup",
-        "router"
+        "personal",
+        "catalog"
       ]
     }
   ]

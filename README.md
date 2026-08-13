@@ -1,10 +1,8 @@
 # Fancy Skills
 
-Small, owned, composable agent skills. You keep control of the process; the skills stay easy to hack.
+This is my personal collection of Agent Skills — ones I use myself, and ones I think are worth keeping. Small, editable, composable. I'll add more as I find them.
 
 [English](README.md) · [简体中文](README.zh-CN.md)
-
-V1 is the **forge**: install, a router, and one-time per-repo setup. Workflow skills land later.
 
 ## Installation
 
@@ -43,22 +41,17 @@ claude plugin install fancy-skills@fancy
 npx skills@latest add fancy1108/fancy-skills
 ```
 
-Pick the skills you want, and which coding agents to install them on. **Make sure `setup-fancy-skills` is one of them.**
+Pick the skills you want, and which coding agents to install them on.
 
-### 2. Run `/setup-fancy-skills`
+### 2. Optional: `/connect`
 
-In your agent, run it once per consuming repo. It will:
+If a project should share this collection's issue tracker, domain docs, and Cursor rules, run `/connect` once in that repo. Later runs update the existing files instead of appending.
 
-- Ask which issue tracker you use (GitHub, GitLab, or local files)
-- Ask where domain docs should live
-- Write Cursor rules that point at the same files CLI agents read
-- Record completion in `docs/agents/setup-state.json` so a later run reconfigures instead of appending
+### 3. See what's here
 
-### 3. Done.
+Run `/catalog` to list the skills in this collection.
 
-Unsure which skill to use? Run `/ask-fancy`.
-
-## Reference
+## What's in the collection
 
 These split on one axis — who can invoke them. **User-invoked** skills are reachable only when you type them. **Model-invoked** skills can be invoked by you or reached for automatically. A user-invoked skill may invoke model-invoked skills, but never another user-invoked one.
 
@@ -66,12 +59,12 @@ These split on one axis — who can invoke them. **User-invoked** skills are rea
 
 **User-invoked**
 
-- **[ask-fancy](./skills/engineering/ask-fancy/SKILL.md)** — Ask which skill or flow fits your situation. A router over the skills in this repo.
-- **[setup-fancy-skills](./skills/engineering/setup-fancy-skills/SKILL.md)** — Configure this repo for fancy-skills — issue tracker, domain doc layout, and Cursor rules.
+- **[catalog](./skills/engineering/catalog/SKILL.md)** — Show what's in this collection and which skill to reach for.
+- **[connect](./skills/engineering/connect/SKILL.md)** — Wire this repo into the collection — issue tracker, domain docs, and Cursor rules.
 
 **Model-invoked**
 
-None yet.
+None yet. Skills I use or choose to keep will land here.
 
 ### Productivity
 
