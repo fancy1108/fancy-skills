@@ -19,7 +19,7 @@ disable-model-invocation: true
 
 - **`/fancy-flow`** — 编排器。判断下一阶段并跑它。
 - **`/fancy-orient`** — 先调研抱怨，再三问，再 `proposal.md`。永不 `git init`。不要一上来就问三问。
-- **`/fancy-shape`** — 建仓、三个视觉方向、**高保真原型**、`design.md`、`decisions.md`、`tasks.md`。不写业务代码。
+- **`/fancy-shape`** — 建仓、三个视觉方向、**高保真原型**、`design.md`、`visual.md`、`decisions.md`、`tasks.md`。不写业务代码。
 - **`/fancy-build`** — 从 `tasks.md` 取一条，验证，再下一条。
 - **`/fancy-harden`** — 有证据的测试 + 真相对齐。
 - **`/fancy-ship`** — 发布和 memory。
@@ -41,11 +41,11 @@ disable-model-invocation: true
 
 **模型触发**
 
-- **`/fancy-build`** — 按 tasks.md 一次只写一条业务代码，用真实命令验证，再接下一条。fancy-flow 的 shape 门已绿，或用户在执行当前任务清单时使用。design.md / 原型 / tasks.md / decisions.md 缺失时不要开工。不要批量做任务。不要用于写提案。
+- **`/fancy-build`** — 按 tasks.md 一次只写一条业务代码，用真实命令验证，再接下一条。fancy-flow 的 shape 门已绿，或用户在执行当前任务清单时使用。design.md / visual.md / 原型 / tasks.md / decisions.md 缺失时不要开工。不要批量做任务。不要用于写提案。
 - **`/fancy-flow`** — 开始或继续一条产品 / vibe coding 流水线。用户要做新产品、做一个应用或工具、走 vibe coding，或在产品仓库里明确说继续时使用。不要用于查正则、看 traceback，或在已有产品里改一个文件的小 bug。
 - **`/fancy-harden`** — 用物理证据证明产品，再对齐漂移：实现、理解或定义。fancy-flow 已做完任务、用户要求测试，或验收感觉不对时使用。不要接受口头「测试通过」。不要在还写提案时使用。
 - **`/fancy-orient`** — 找问题，调研抱怨和竞品，再锁定谁用 / 多痛 / 为什么现在做，并写下 proposal.md。新产品、写提案、vibe coding 第 1–2 步，或 fancy-flow 需要三问有答案时使用。不要建 git 仓库。不要一上来就问三问。不要用于实现或小 bug。
-- **`/fancy-shape`** — 写代码前的准备：建仓、锁定视觉契约、产出高保真原型，再写 decisions.md 和 tasks.md。fancy-flow 已有稳定提案、用户在塑造产品，或他们提到 design.md、原型、demo.html、拆任务时使用。不要写业务代码。不要跳过视觉方向和可点 demo。不要用于小 bug。
+- **`/fancy-shape`** — 写代码前的准备：建仓、锁定视觉契约、产出高保真原型，再写 decisions.md 和 tasks.md。fancy-flow 已有稳定提案、用户在塑造产品，或他们提到 design.md、visual.md、原型、demo.html、拆任务时使用。不要写业务代码。不要跳过视觉方向和可点 demo。不要用于小 bug。
 - **`/fancy-ship`** — 发布产品并更新 memory：生产配置、回滚点、PROGRESS.md，以及下一轮从哪一步开始。fancy-flow 已硬化，或用户要求部署、结束本轮时使用。不要带着 mock 数据上线。不要在提案阶段使用。
 <!-- END GENERATED INVENTORY -->
 

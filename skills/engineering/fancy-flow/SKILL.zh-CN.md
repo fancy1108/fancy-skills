@@ -21,7 +21,7 @@ description: >-
 | 阶段 | 人类步骤 | 出门卡点（离开前必须有） |
 | --- | --- | --- |
 | `/fancy-orient` | 1 调研痛点，2 写提案 | `proposal.md` **已被接受** + 三问稳定。先调研再问三问。不建 git 仓库 |
-| `/fancy-shape` | 3 初始化，4 视觉，5 或 5.5 契约，6 拆任务 | `design.md` + **已接受的**高保真原型 + **已接受的** `tasks.md` + `decisions.md` |
+| `/fancy-shape` | 3 初始化，4 视觉，5 或 5.5 契约，6 拆任务 | `design.md` + `visual.md` + **已接受的**高保真原型 + **已接受的** `tasks.md` + `decisions.md` |
 | `/fancy-build` | 7 写代码 | 按任务交付的真代码，一次一条 |
 | `/fancy-harden` | 8 测试，8.5 真相对齐 | 物理验证日志 + 纠偏。证据，不是口头 |
 | `/fancy-ship` | 9 发布 | 上线（或已交付）状态 + 已更新 memory |

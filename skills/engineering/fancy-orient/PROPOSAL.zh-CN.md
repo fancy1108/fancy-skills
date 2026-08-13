@@ -18,6 +18,6 @@
 | **Acceptance Criteria** | 草稿；demo 后再锁定 |
 | **Three questions** | 谁用 / 多痛 / 为什么现在 — 引用用户原话 |
 
-`proposal.md` = 做什么、为什么。`design.md`（之后）= 长什么样。`decisions.md` / `tasks.md`（之后）= 怎么建。
+`proposal.md` = 做什么、为什么。`design.md`（之后）= 设计规范（token）。`visual.md`（之后）= 屏幕和禁令。`decisions.md` / `tasks.md`（之后）= 怎么建。
 
 写好的文件在用户说对之前都是草稿。

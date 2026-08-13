@@ -10,9 +10,18 @@ Paths use `specs/<feature>/` (default `core` when there is one product). Details
 | `specs/<feature>/decisions.md` | Chosen architecture, rejected alternatives, prototype branch |
 | `specs/<feature>/tasks.md` | Atomic work, verification per row |
 
+## UI specs (step 4 — before the demo)
+
+| File | Role |
+| --- | --- |
+| `specs/<feature>/design.md` | Design spec: tokens, type, spacing. No screen map |
+| `specs/<feature>/visual.md` | This product's UI contract: look pick, screen map, UI states, ≥5 bans |
+
+No-UI: skip both. See [VISUAL.md](VISUAL.md).
+
 ## From-scratch UI (step 5 — do not skip)
 
-**Gate in:** `design.md` exists from case 1 or 2 in [VISUAL.md](VISUAL.md). If they have not picked a case, go back. Do not invent a look and jump here.
+**Gate in:** `design.md` **and** `visual.md` exist from case 1 or 2 in [VISUAL.md](VISUAL.md). If they have not picked a case, go back. Do not invent a look and jump here.
 
 Order: **demo → user looks → `contract.ts` → test-contract draft → `gate_report.md`**. Then step 6.
 
@@ -26,10 +35,10 @@ Order: **demo → user looks → `contract.ts` → test-contract draft → `gate
 ### Demo constraints
 
 - One file: CSS in `<style>`, JS in `<script>`, inline SVG. Double-click to open. No bundler.
-- Pull tokens from `design.md` into `:root`. Follow the screen map. **No dead buttons.** No `alert()`.
+- Pull tokens from `design.md` into `:root`. Follow the screen map in `visual.md`. **No dead buttons.** No `alert()`.
 - `MockDB` + `localStorage`; 200–500ms delay on writes so loading exists.
 - Realistic mock data, not placeholder names.
-- A small debug panel that can force every UI state in `design.md` (empty, loading, error, …).
+- A small debug panel that can force every UI state in `visual.md` (empty, loading, error, …).
 
 Show the demo path. **Stop the turn.** Ask them to open it: what should change? If it feels cheap or too AI, polish per [VISUAL.md](VISUAL.md) (`taste` / `impeccable` if installed, else critique here) and ask again. Do **not** write `contract.ts` until they say the demo is the contract. Then extract `contract.ts` from the demo (states, field names, invariants). Then the test-contract draft from the proposal ACs (write ACs into `proposal.md` if they are still stubs). Then `gate_report.md`. Freeze specs as read-only for build.
 
@@ -42,11 +51,11 @@ If they named case 3 but have not given a path, **stop** and ask for it. Keep th
 3. **MVP vs P2** — Prototype is often larger than MVP. P2 stays visible in the UI if needed but gets no backend task.
 4. **Prototype → Task map** — each MVP row binds to a later task id.
 
-Reverse-extract `design.md` from the UI if step 4 was skipped. Put the four tables in `tasks.md` (or `specs/<feature>/prototype-map.md` linked from it). **Stop.** Ask if the map is right before writing architecture tasks.
+Reverse-extract `design.md` (tokens) and `visual.md` (screens + bans) from the UI if step 4 was skipped. Put the four tables in `tasks.md` (or `specs/<feature>/prototype-map.md` linked from it). **Stop.** Ask if the map is right before writing architecture tasks.
 
 ## No UI
 
-Record `Prototype: none (no UI)` in `decisions.md`. Skip `design.md` and demo. Still write a unit test-contract draft if there is logic to lock.
+Record `Prototype: none (no UI)` in `decisions.md`. Skip `design.md`, `visual.md`, and demo. Still write a unit test-contract draft if there is logic to lock.
 
 ## `contract.ts`
 
@@ -74,4 +83,4 @@ Existing-prototype branch: de-mock tasks; do not add tasks that grow the mock. N
 
 If later stages edit `specs/` to make a test pass, restore `specs/` and fix the product code instead.
 
-After tasks exist, Mini+: fill `memory/ARCHITECTURE.md` as a "want to do X → go here" map, and add Context Routing lines to `CLAUDE.md` (read `design.md` before UI, `contract.ts` before data, `tasks.md` before coding).
+After tasks exist, Mini+: fill `memory/ARCHITECTURE.md` as a "want to do X → go here" map, and add Context Routing lines to `CLAUDE.md` (read `design.md` for tokens, `visual.md` before layout, `contract.ts` before data, `tasks.md` before coding).

@@ -31,10 +31,10 @@ Who is this for? How painful is it? Why now? The user answers; the agent must no
 `/fancy-orient` is done when the **Three questions** are stable and `proposal.md` is on disk. Research (quotes, competitors, a direction) happens **before** those questions unless the user already answered all three in their own words. A product name is not a skip. No `git init` in that skill.
 
 **High-fidelity prototype**:
-The interactive contract produced (or audited) by `/fancy-shape`. From scratch: a clickable demo. Existing UI: that UI is the prototype. No UI: an explicit waiver in `decisions.md`. Same rank as `design.md` and `tasks.md`.
+The interactive contract produced (or audited) by `/fancy-shape`. From scratch: a clickable demo. Existing UI: that UI is the prototype. No UI: an explicit waiver in `decisions.md`. Same rank as `visual.md` and `tasks.md`.
 
 **Shape gate**:
-`/fancy-shape` is done when `design.md` (or no-UI waiver), the **High-fidelity prototype** (or no-UI waiver), `tasks.md`, and `decisions.md` exist. From-scratch UI also needs `contract.ts`, a test-contract draft, and `gate_report.md`. Blocks `/fancy-build`. Visual directions come **before** `design.md`.
+`/fancy-shape` is done when `design.md` + `visual.md` (or no-UI waiver), the **High-fidelity prototype** (or no-UI waiver), `tasks.md`, and `decisions.md` exist. From-scratch UI also needs `contract.ts`, a test-contract draft, and `gate_report.md`. Blocks `/fancy-build`. `design.md` is the design spec (tokens). `visual.md` is this product's UI contract (screens + bans). Visual case lock comes **before** either file.
 
 **Pipeline**:
 `/fancy-flow` is the intent-triggered assembler. It dispatches `/fancy-orient` → `/fancy-shape` → `/fancy-build` → `/fancy-harden` → `/fancy-ship`. It must not run on one-shot questions.

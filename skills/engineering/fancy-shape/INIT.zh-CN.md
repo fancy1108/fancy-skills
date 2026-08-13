@@ -57,7 +57,7 @@
 | Check-in：新会话先读 `memory/PROGRESS.md`（Mini+）再 `git log --oneline -5` | 是 |
 | Goals、Non-Goals、Visual Mood、Assumptions、Risks | 否 — 留在 `specs/` |
 
-`CLAUDE.md` 里不要出现功能清单、DB schema、API 路由，或 `design.md` / `tasks.md` 正文。
+`CLAUDE.md` 里不要出现功能清单、DB schema、API 路由，或 `design.md` / `visual.md` / `tasks.md` 正文。
 
 ## 文件落地之后
 

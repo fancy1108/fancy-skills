@@ -2,7 +2,14 @@
 
 UI products only. No UI → skip this file; record the no-UI waiver in `decisions.md`.
 
-**Do not write `design.md` or `demo.html` until the matching case below has a pick or a file.** Diagnose in chat first.
+Two different specs — do not collapse them:
+
+| File | What it is |
+| --- | --- |
+| `specs/<feature>/design.md` | **Design spec** (Clutch Design.md): tokens, type, spacing, brand references. `oklch()`, no hex |
+| `specs/<feature>/visual.md` | **This product's UI contract**: which look was picked, screen map, UI states, at least five visual bans |
+
+**Do not write `visual.md` or `demo.html` until the matching case has a pick or a file.** Diagnose in chat first.
 
 ## Diagnose — stop the turn
 
@@ -28,23 +35,27 @@ Pick **three** presets that fit this Pitch. They must disagree. Fill this table 
 | **B** | … | Clutch preset | bg + accent | pairing | … |
 | **C** | … | Clutch preset | bg + accent | pairing | … |
 
-**Stop.** Ask: **Which look should the demo follow — A, B, C, or a mix?** Then write `design.md` from that preset, recap, **stop again**. No demo in those turns.
+**Stop.** Ask: **Which look should the demo follow — A, B, C, or a mix?** Then write `design.md` (tokens from that preset) **and** `visual.md` (screen map + bans). Recap. **Stop again.** No demo in those turns.
 
 ## Case 2 — style is set, need mockups
 
 **Stop.** Ask them to provide at least one: `design.md` / `DESIGN.md`, screenshots, Figma, or a URL.
 
-Wait. Then extract tokens (`oklch()`). If this harness has `impeccable` (extract), invoke it. If not, extract inside this skill. Write `specs/<feature>/design.md`. Recap. **Stop.** Then mockup (step 5) from those tokens — still no demo in the extract turn.
+Wait. Then put the design spec at `specs/<feature>/design.md` (copy or extract tokens in `oklch()`). If this harness has `impeccable` (extract), invoke it. If not, extract inside this skill. Then write `visual.md` (screen map + bans) from the Pitch — do not dump screens into `design.md`. Recap. **Stop.** Then mockup (step 5). No demo in the extract turn.
 
 ## Case 3 — they already have a prototype
 
-**Stop.** Ask for the path or the files. Do not generate `demo.html`. Go to step 5.5 in [ARTIFACTS.md](ARTIFACTS.md). Reverse-extract `design.md` from that UI if needed.
+**Stop.** Ask for the path or the files. Do not generate `demo.html`. Go to step 5.5 in [ARTIFACTS.md](ARTIFACTS.md). Reverse-extract `design.md` (tokens) and `visual.md` (screens + bans) from that UI if needed.
 
-## After `design.md` (cases 1–2)
+## After both files (cases 1–2)
 
-Append 3–5 visual iron rules to `CLAUDE.md`. Check the file against the bans; fix before the demo.
+Append 3–5 iron rules to `CLAUDE.md`: follow `design.md` for tokens (no hex); follow `visual.md` before any UI layout.
 
-`design.md` must include: chosen references, `oklch()` tokens (no hex), type + spacing, screen map for screens this product actually has, at least five visual bans (card-itis, gray soup, rainbow gradients, dead empty states, …).
+`design.md` must include: chosen references / preset id, `oklch()` tokens, type + spacing. No screen map.
+
+`visual.md` must include: which look (A/B/C or source), screen map for screens this product actually has, UI states (empty, loading, error, …), at least five visual bans (card-itis, gray soup, rainbow gradients, dead empty states, …).
+
+Check `visual.md` bans against `design.md` tokens; fix before the demo.
 
 ## After the first demo
 

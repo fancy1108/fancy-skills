@@ -67,7 +67,7 @@ Search query patterns: [HUNT.md](HUNT.md).
 
 ## Three questions (gate)
 
-The user answers these. You may propose **from the evidence**; they confirm. Unstable or missing → more research or more talk. Do not start a repository. Do not write `design.md`, `tasks.md`, `decisions.md`, or a DB schema.
+The user answers these. You may propose **from the evidence**; they confirm. Unstable or missing → more research or more talk. Do not start a repository. Do not write `design.md`, `visual.md`, `tasks.md`, `decisions.md`, or a DB schema.
 
 1. **Who** is this for?
 2. **How painful** is it?

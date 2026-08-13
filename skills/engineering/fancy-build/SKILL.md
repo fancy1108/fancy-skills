@@ -4,7 +4,7 @@ description: >-
   Write business code one task at a time from tasks.md, verify with a real
   command, then take the next task. Use when fancy-flow has a complete shape
   gate, or the user is implementing the current task list. Do not start if
-  design.md / prototype / tasks.md / decisions.md are missing. Do not batch
+  design.md / visual.md / prototype / tasks.md / decisions.md are missing. Do not batch
   tasks. Do not use for writing the proposal.
 ---
 
@@ -14,7 +14,7 @@ Surgical implementation. One row from `tasks.md`, verify, then the next. You are
 
 ## Gate in
 
-Refuse unless the **shape gate** is green: `design.md` (or no-UI waiver), **high-fidelity prototype** (or no-UI waiver), `tasks.md`, `decisions.md`, **and the user accepted those drafts**. If not, return to `/fancy-flow` / `/fancy-shape`.
+Refuse unless the **shape gate** is green: `design.md` + `visual.md` (or no-UI waiver), **high-fidelity prototype** (or no-UI waiver), `tasks.md`, `decisions.md`, **and the user accepted those drafts**. If not, return to `/fancy-flow` / `/fancy-shape`.
 
 Do not edit `specs/` to make a check pass. If the contract is wrong, stop and send the user back to shape / harden. Restore `specs/` if you already changed it.
 
@@ -29,7 +29,7 @@ Do not edit `specs/` to make a check pass. If the contract is wrong, stop and se
 
 1. **Check-in** (every new session): read `memory/PROGRESS.md` if it exists, `memory/FAILURES.md` if it exists, current `tasks.md` row, `decisions.md`, and `proposal.md`. Run `git log --oneline -10` if git exists. Name the next open task.
 2. Take **one** open task. Restate its Done-when and Verify in one line before editing.
-3. Implement against the prototype contract and `design.md`. Match `contract.ts` names and states. Do not expand mocks; on the existing-prototype branch, prefer replacing a mock the task names.
+3. Implement against the prototype, `design.md` (tokens), and `visual.md` (screens + bans). Match `contract.ts` names and states. Do not expand mocks; on the existing-prototype branch, prefer replacing a mock the task names.
 4. Verify, in order: the row's Verify command; lint/types if the repo has them; if UI, say what the user should see. Paste or save the log.
 5. One commit for that task if git exists (Conventional Commits). Mark the row done. Append one line to `memory/PROGRESS.md` if Mini+ exists. Record a pit in `FAILURES.md` if you hit one.
 6. Next row, or **check-out** if the user pauses: working tree clean, PROGRESS says what is left and what is next.

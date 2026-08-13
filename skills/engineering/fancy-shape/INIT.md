@@ -57,7 +57,7 @@ Do not paste the whole proposal into `CLAUDE.md`.
 | Check-in: new session reads `memory/PROGRESS.md` (if Mini+) then `git log --oneline -5` | Yes |
 | Goals, Non-Goals, Visual Mood, Assumptions, Risks | No — stay in `specs/` |
 
-`CLAUDE.md` must not contain feature lists, DB schema, API routes, or `design.md` / `tasks.md` body.
+`CLAUDE.md` must not contain feature lists, DB schema, API routes, or `design.md` / `visual.md` / `tasks.md` body.
 
 ## After the files exist
 

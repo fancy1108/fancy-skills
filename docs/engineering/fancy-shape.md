@@ -17,10 +17,13 @@ Type `/fancy-shape`, or let `/fancy-flow` reach it after a stable proposal.
 ## Common questions
 
 **We already have a runnable UI. Do we still make demo.html?**
-No. That is the 5.5 branch: keep the UI, extract `design.md`, write the mock map and P2 table.
+No. That is the 5.5 branch: keep the UI, extract `design.md` (tokens) and `visual.md` (screens + bans), write the mock map and P2 table.
 
 **CLI-only product?**
 Skip visual and prototype. Record `Prototype: none (no UI)` in `decisions.md`.
+
+**design.md vs visual.md?**
+`design.md` is the design spec (tokens, type, spacing). `visual.md` is this product's UI contract (screen map, states, bans). Do not dump screens into `design.md`.
 
 **Does this call `/fancy-init`?**
 No. Shape inits the product repo itself. `/fancy-init` is the optional conventions skill (issue tracker, glossary) and is user-invoked.

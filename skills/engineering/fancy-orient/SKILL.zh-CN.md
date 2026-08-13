@@ -65,7 +65,7 @@ python3 <本技能>/scripts/hunt.py "检索句一" "检索句二"
 
 ## 三问（门槛）
 
-用户来答。你可以从**证据**里提议；他们确认。不稳或缺失 → 继续调研或继续谈。不要开仓库。不要写 `design.md`、`tasks.md`、`decisions.md` 或数据库 schema。
+用户来答。你可以从**证据**里提议；他们确认。不稳或缺失 → 继续调研或继续谈。不要开仓库。不要写 `design.md`、`visual.md`、`tasks.md`、`decisions.md` 或数据库 schema。
 
 1. **谁**在用？
 2. 有**多痛**？

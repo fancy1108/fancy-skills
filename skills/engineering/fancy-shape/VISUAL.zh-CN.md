@@ -2,7 +2,14 @@
 
 仅 UI 产品。无 UI → 跳过本文件；在 `decisions.md` 写无 UI 豁免。
 
-**对应情况还没选定、文件也还没给之前，不要写 `design.md` 或 `demo.html`。** 先在对话里诊疗。
+两份规范，不要并成一份：
+
+| 文件 | 是什么 |
+| --- | --- |
+| `specs/<feature>/design.md` | **设计规范**（Clutch 的 Design.md）：token、字体、间距、品牌参照。`oklch()`，不要 hex |
+| `specs/<feature>/visual.md` | **本产品的界面契约**：选了哪套样子、屏幕地图、UI 状态、至少五条视觉禁令 |
+
+**对应情况还没选定、文件也还没给之前，不要写 `visual.md` 或 `demo.html`。** 先在对话里诊疗。
 
 ## 诊疗 — 停这一轮
 
@@ -28,23 +35,27 @@
 | **B** | … | Clutch 预设 | 背景 + 强调 | 搭配 | … |
 | **C** | … | Clutch 预设 | 背景 + 强调 | 搭配 | … |
 
-**停。** 问：**demo 跟哪套走 — A、B、C，还是混？** 然后按该预设写 `design.md`，复述，**再停。** 那两轮不要做 demo。
+**停。** 问：**demo 跟哪套走 — A、B、C，还是混？** 然后写 `design.md`（该预设的 token）**和** `visual.md`（屏幕地图 + 禁令）。复述。**再停。** 那两轮不要做 demo。
 
 ## 情况 2 — 风格已定，要核心页 Mockup
 
 **停。** 请他们至少给一样：`design.md` / `DESIGN.md`、截图、Figma、或 URL。
 
-等。然后抽 token（`oklch()`）。本环境有 `impeccable`（extract）就调用。没有就在本技能里抽。写入 `specs/<feature>/design.md`。复述。**停。** 再按这些 token 做 Mockup（第 5 步）— 抽取那一轮仍然不要写 demo。
+等。把设计规范落到 `specs/<feature>/design.md`（拷贝，或抽成 `oklch()` token）。本环境有 `impeccable`（extract）就调用。没有就在本技能里抽。然后写 `visual.md`（屏幕地图 + 禁令），从 Pitch 来 — 不要把屏幕塞进 `design.md`。复述。**停。** 再做 Mockup（第 5 步）。抽取那一轮不要写 demo。
 
 ## 情况 3 — 已经有原型
 
-**停。** 要路径或文件。不要再生成 `demo.html`。转到 [ARTIFACTS.md](ARTIFACTS.md) 第 5.5 步。需要的话从那份 UI 反提 `design.md`。
+**停。** 要路径或文件。不要再生成 `demo.html`。转到 [ARTIFACTS.md](ARTIFACTS.md) 第 5.5 步。需要的话从那份 UI 反提 `design.md`（token）和 `visual.md`（屏幕 + 禁令）。
 
-## 有了 `design.md` 之后（情况 1–2）
+## 两份文件都有了之后（情况 1–2）
 
-把 3–5 条视觉铁律追加进 `CLAUDE.md`。对照禁令检查；违规则先改再做 demo。
+把 3–5 条铁律追加进 `CLAUDE.md`：token 跟 `design.md`（禁止 hex）；改布局前先读 `visual.md`。
 
-`design.md` 必须有：选定的参照、`oklch()` token（不要 hex）、字体 + 间距、本产品实际有的屏幕地图、至少五条视觉禁令（卡片病、灰汤、彩虹渐变、死掉的空状态，…）。
+`design.md` 必须有：选定的参照 / 预设 id、`oklch()` token、字体 + 间距。不要屏幕地图。
+
+`visual.md` 必须有：选了哪套（A/B/C 或来源）、本产品实际有的屏幕地图、UI 状态（空、加载、错误，…）、至少五条视觉禁令（卡片病、灰汤、彩虹渐变、死掉的空状态，…）。
+
+用 `visual.md` 的禁令对照 `design.md` 的 token；违规则先改再做 demo。
 
 ## 第一份 demo 之后
 

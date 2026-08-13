@@ -18,6 +18,6 @@ Product truth. Not a UI spec, not an architecture.
 | **Acceptance Criteria** | Draft; lock after a demo |
 | **Three questions** | Who / how painful / why now — quoted from the user |
 
-`proposal.md` = what and why. `design.md` (later) = how it looks. `decisions.md` / `tasks.md` (later) = how it is built.
+`proposal.md` = what and why. `design.md` (later) = design spec (tokens). `visual.md` (later) = screens and bans. `decisions.md` / `tasks.md` (later) = how it is built.
 
 The written file is a draft until the user says it is right.

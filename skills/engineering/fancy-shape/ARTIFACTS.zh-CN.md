@@ -10,9 +10,18 @@
 | `specs/<feature>/decisions.md` | 选定架构、否决项、原型分支 |
 | `specs/<feature>/tasks.md` | 原子工作，每行有验证 |
 
+## UI 规格（第 4 步 — 做 demo 之前）
+
+| 文件 | 角色 |
+| --- | --- |
+| `specs/<feature>/design.md` | 设计规范：token、字体、间距。不要屏幕地图 |
+| `specs/<feature>/visual.md` | 本产品界面契约：选了哪套、屏幕地图、UI 状态、≥5 条禁令 |
+
+无 UI：两份都跳过。见 [VISUAL.md](VISUAL.md)。
+
 ## 从零做 UI（第 5 步 — 不许跳）
 
-**进门：** 有 `design.md`，来自 [VISUAL.md](VISUAL.md) 情况 1 或 2。还没选情况，回去。不要自己发明一套样子跳到这里。
+**进门：** 有 `design.md` **和** `visual.md`，来自 [VISUAL.md](VISUAL.md) 情况 1 或 2。还没选情况，回去。不要自己发明一套样子跳到这里。
 
 顺序：**demo → 人看 → `contract.ts` → 测试契约草稿 → `gate_report.md`**。然后第 6 步。
 
@@ -26,10 +35,10 @@
 ### Demo 约束
 
 - 单文件：CSS 在 `<style>`，JS 在 `<script>`，图标 inline SVG。双击即开。不要打包器。
-- 从 `design.md` 抽 token 到 `:root`。跟屏幕地图走。**禁止死按钮。** 禁止 `alert()`。
+- 从 `design.md` 抽 token 到 `:root`。跟 `visual.md` 的屏幕地图走。**禁止死按钮。** 禁止 `alert()`。
 - `MockDB` + `localStorage`；写入时 200–500ms 延迟，好让 loading 存在。
 - mock 数据要像真的，不要占位人名。
-- 右下角小调试面板，能强制切到 `design.md` 里每一个 UI 状态（空、加载、错误，…）。
+- 右下角小调试面板，能强制切到 `visual.md` 里每一个 UI 状态（空、加载、错误，…）。
 
 把 demo 路径亮出来。**停这一轮。** 请他们打开：要改什么？廉价或太 AI，按 [VISUAL.md](VISUAL.md) 打磨（有则调用 `taste` / `impeccable`，否则在这里批判）再问一遍。他们说 demo 就是契约之前，**不要**写 `contract.ts`。然后从 demo 抽出 `contract.ts`（状态、字段名、不变量）。再按提案 AC 写测试契约草稿（AC 还是草稿就先写回 `proposal.md`）。然后 `gate_report.md`。之后把 specs 当只读，留给 build。
 
@@ -42,11 +51,11 @@
 3. **MVP vs P2** — 原型往往比 MVP 大。P2 可以留在界面上，但不写后端任务。
 4. **Prototype → Task 映射** — 每个 MVP 行绑到后面的 task id。
 
-若跳过了第 4 步，从 UI 反提 `design.md`。四张表写进 `tasks.md`（或 `specs/<feature>/prototype-map.md` 再从 tasks 引用）。**停。** 问这张映射对不对，再写架构任务。
+若跳过了第 4 步，从 UI 反提 `design.md`（token）和 `visual.md`（屏幕 + 禁令）。四张表写进 `tasks.md`（或 `specs/<feature>/prototype-map.md` 再从 tasks 引用）。**停。** 问这张映射对不对，再写架构任务。
 
 ## 无 UI
 
-在 `decisions.md` 写 `Prototype: none (no UI)`。跳过 `design.md` 和 demo。若有逻辑要锁，仍写一份单元测试契约草稿。
+在 `decisions.md` 写 `Prototype: none (no UI)`。跳过 `design.md`、`visual.md` 和 demo。若有逻辑要锁，仍写一份单元测试契约草稿。
 
 ## `contract.ts`
 
@@ -74,4 +83,4 @@
 
 若后面阶段为了让测试过而改 `specs/`，把 `specs/` 还原，改产品代码。
 
-任务写好后，Mini+：把 `memory/ARCHITECTURE.md` 写成「想做 X → 去这里」的地图，并在 `CLAUDE.md` 加 Context Routing（改 UI 先读 `design.md`，动数据先读 `contract.ts`，写代码先读 `tasks.md`）。
+任务写好后，Mini+：把 `memory/ARCHITECTURE.md` 写成「想做 X → 去这里」的地图，并在 `CLAUDE.md` 加 Context Routing（token 读 `design.md`，改布局先读 `visual.md`，动数据先读 `contract.ts`，写代码先读 `tasks.md`）。

@@ -22,7 +22,7 @@ Leave if the user wants a regex, a traceback, a one-file fix, or anything that i
 | Stage | Human steps | Gate (must exist before leaving) |
 | --- | --- | --- |
 | `/fancy-orient` | 1 research pain, 2 write the proposal | `proposal.md` **accepted** + three questions stable. Research before the questions. No git repo |
-| `/fancy-shape` | 3 init, 4 visual, 5 or 5.5 contract, 6 split tasks | `design.md` + **accepted** prototype + **accepted** `tasks.md` + `decisions.md` |
+| `/fancy-shape` | 3 init, 4 visual, 5 or 5.5 contract, 6 split tasks | `design.md` + `visual.md` + **accepted** prototype + **accepted** `tasks.md` + `decisions.md` |
 | `/fancy-build` | 7 write code | Tasks delivered as real code, one at a time |
 | `/fancy-harden` | 8 test, 8.5 drift alignment | Physical verification logs + fixes. Evidence, not claims |
 | `/fancy-ship` | 9 release | Live (or shipped) status + memory updated |

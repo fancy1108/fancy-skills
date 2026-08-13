@@ -12,7 +12,7 @@ Type `/fancy-build`, or let `/fancy-flow` dispatch it when tasks are open and sh
 
 ## Prerequisites
 
-Shape gate: `design.md` or no-UI waiver, prototype or no-UI waiver, `tasks.md`, `decisions.md`.
+Shape gate: `design.md` + `visual.md` or no-UI waiver, prototype or no-UI waiver, `tasks.md`, `decisions.md`.
 
 ## It's working if
 
