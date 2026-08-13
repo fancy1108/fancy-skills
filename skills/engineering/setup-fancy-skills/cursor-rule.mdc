@@ -1,0 +1,13 @@
+---
+description: Fancy-skills project context — issue tracker and domain docs
+alwaysApply: true
+---
+
+# Fancy skills
+
+Read and follow these files; do not invent a parallel tracker or glossary.
+
+- Issue tracker: `docs/agents/issue-tracker.md`
+- Domain docs: `docs/agents/domain.md`
+
+If `docs/agents/setup-state.json` is missing, run the `/setup-fancy-skills` skill before using other fancy-skills engineering flows.

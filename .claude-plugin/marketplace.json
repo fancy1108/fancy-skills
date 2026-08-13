@@ -1,0 +1,22 @@
+{
+  "name": "fancy",
+  "owner": {
+    "name": "fancy1108",
+    "url": "https://github.com/fancy1108"
+  },
+  "description": "Fancy's agent skills — small, owned, composable.",
+  "plugins": [
+    {
+      "name": "fancy-skills",
+      "source": "./",
+      "description": "Fancy's agent skills — small, owned, composable. Setup, routing, and the forge they live in.",
+      "category": "development",
+      "keywords": [
+        "skills",
+        "engineering",
+        "setup",
+        "router"
+      ]
+    }
+  ]
+}
