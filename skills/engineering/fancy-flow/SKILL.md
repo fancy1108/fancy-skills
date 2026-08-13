@@ -57,13 +57,14 @@ Stop. Ask one question. Wait for the reply. Then either edit or proceed.
 | Research table | Which pain is yours? What did I get wrong? | react |
 | `proposal.md` | Is Pitch / MVP / Non-Goals right? | accept or name edits |
 | Init menus | which tier / stack / persistence | pick |
-| Three visual directions | Fill the A/B/C **table** (name, real references, `oklch()`, type, forbids), then: **Which look should the demo follow — A, B, C, or a mix?** Stop. Empty letters are not a question. | pick or mix — a vibe word is not a pick |
-| Prototype / demo | Open it. What should change? | accept, or a change list — then revise and ask again |
+| How we lock the look | **1 vague / 2 I have files / 3 I have a prototype.** Stop. | they pick a case |
+| Three Clutch presets (case 1 only) | Fill A/B/C from Clutch Design presets (`/fancy-shape` PRESETS). **Which look — A, B, C, or a mix?** Empty letters are not a question. | pick or mix |
+| Prototype / demo | Open it. What should change? Polish (`taste` / `impeccable` if installed) if cheap. | accept, or a change list — then revise and ask again |
 | `tasks.md` | Is this split right? | accept |
 | Harden evidence | Use it once. What's wrong? | they used it |
 | Ship plan | Deploy / local-only — yes? | yes |
 
-Forbidden: write `proposal.md` then immediately run `/fancy-shape`. Forbidden: write `demo.html` before they picked a visual direction. Forbidden: write `demo.html` then immediately write `contract.ts`. Forbidden: declare shape complete and start `/fancy-build` in the same turn.
+Forbidden: write `proposal.md` then immediately run `/fancy-shape`. Forbidden: write `demo.html` before they picked a visual **case** (and, in case 1, a preset). Forbidden: write `demo.html` then immediately write `contract.ts`. Forbidden: declare shape complete and start `/fancy-build` in the same turn.
 
 ## Rewind (any lock, any time)
 
@@ -75,7 +76,7 @@ Accepted is not permanent. Natural language that names an earlier decision **goe
 | Proposal is wrong / MVP wrong / redo the three questions | Orient proposal | Edit, wait for accept. Ask which shape artifacts to redo |
 | Make it Pro / Mini / Micro | Shape init (tier) | `/fancy-shape` init: add or stop files for the new tier. No second `git init`. Keep the proposal |
 | Change stack / persistence / agent | Shape init (stack) | Update `CLAUDE.md` start command. If business code exists, do not rewrite the app until they confirm |
-| Change the look / ugly | Shape visual | Re-offer three directions. Demo becomes a draft |
+| Change the look / ugly | Shape visual | Re-ask the three cases. Case 1: new A/B/C from Clutch presets. Demo becomes a draft |
 | Prototype is wrong / change the demo | Shape contract | Revise demo, wait, update `contract.ts` if names changed |
 | Split is wrong / tasks are wrong | Shape split | Edit `tasks.md`, wait for accept |
 | Redo this task / this feature is wrong | Build that row | Reopen the row. Do not batch |

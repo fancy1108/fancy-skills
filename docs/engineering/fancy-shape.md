@@ -4,7 +4,7 @@
 
 Fancy Shape is all preparation before business code: init the repo, lock visuals, produce a **high-fidelity prototype** as the interactive contract, then `decisions.md` and `tasks.md`.
 
-The defining constraint: do not skip the diverge steps **or the human locks**. Init shows Micro / Mini / Pro as a menu (not a yes/no on Mini), then confirms stack with the user. Visual offers **three directions as A/B/C and stops** before `design.md` or any demo. From-scratch prototype is demo → **user accepts** → contract → test draft → gate report. An existing runnable UI is audited, not replaced. `tasks.md` is a draft until they accept the split.
+The defining constraint: do not skip the diverge steps **or the human locks**. Init shows Micro / Mini / Pro as a menu. Visual first asks **vague / I have files / I have a prototype**, then (case 1) three Clutch Design presets. From-scratch prototype is demo → **user accepts, with optional polish** → contract. An existing runnable UI is audited, not replaced.
 
 ## When to reach for it
 
@@ -28,7 +28,7 @@ No. Shape inits the product repo itself. `/fancy-init` is the optional conventio
 ## It's working if
 
 - `git init` happened only after orient, a **shown** Micro/Mini/Pro menu, and a confirmed stack.
-- Three visual directions appeared as a **menu**, they picked, `design.md` was written, **then** a clickable demo — never demo first.
+- Visual asked **vague / files / prototype** before any demo. Case 1 used three Clutch Design presets, not empty A/B/C.
 - A UI product has a clickable high-fidelity artifact (or the user's existing one) **that they accepted** before `contract.ts` / `tasks.md`.
 - `/fancy-build` is still blocked until the gate is green.
 - Saying Mini should have been Pro (or any earlier pick) rewinds that lock; it does not start a new product.

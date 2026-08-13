@@ -1,53 +1,59 @@
 # Visual (step 4)
 
-UI products only. No UI → skip this file; record the no-UI waiver in `decisions.md`. Existing runnable prototype (step 5.5) → skip this file; reverse-extract `design.md` from that UI.
+UI products only. No UI → skip this file; record the no-UI waiver in `decisions.md`.
 
-**Do not write `design.md` first. Do not write `demo.html` first.** Diagnose in chat, lock, then demo.
+**Do not write `design.md` or `demo.html` until the matching case below has a pick or a file.** Diagnose in chat first.
 
-## 1. Three directions — stop the turn
+## Diagnose — stop the turn
 
-From the proposal's one-sentence Pitch (not from a vibe adjective alone), offer **three** labeled directions **in the chat**. Each row:
+After init, ask **exactly**:
 
-- **Name**
-- **1–2 named references** (real products, not "minimal" / "modern")
-- **Color temperature** in `oklch()` (one background + one accent is enough)
-- **Type pairing**
-- **What it forbids**
+**How should we lock the look?**
 
-A / B / C are **three different looks for this product**, invented this turn from the Pitch. They are not global names (not Micro / Mini / Pro). Do not ask "A, B, or C?" with empty letters.
+1. **Vague** — I don't know the style. Recommend three from Clutch Design presets.
+2. **Style is set** — I'll give `design.md`, screenshots, or a reference URL.
+3. **I already have a prototype** — I'll give the path (or drop the files).
 
-Paste this table, filled. The three rows must disagree (different references, different temperature). Then ask the question. Do not skip the table.
+A vibe adjective is not a case. Proposal Visual Mood is not a case. Infer only if they already attached a prototype, a `design.md`, or said they have no idea.
 
-| | Name | Looks like | Color (`oklch()`) | Type | Forbids |
+## Case 1 — vague style
+
+Catalog: [PRESETS.md](PRESETS.md) (snapshot of Clutch Design mode's 70+ brand looks). If a Clutch repo is on disk, after they pick an id, read `services/orchestrator/src/design/presets/<id>.md` or `.spec.json` for tokens.
+
+Pick **three** presets that fit this Pitch. They must disagree. Fill this table — **Looks like** is the preset name (Linear, Apple, Notion, …), not "minimal". Do not paste the whole catalog.
+
+| | Name | Looks like (preset) | Color (`oklch()`) | Type | Forbids |
 | --- | --- | --- | --- | --- | --- |
-| **A** | … | 1–2 real products | bg + accent | pairing | … |
-| **B** | … | 1–2 real products | bg + accent | pairing | … |
-| **C** | … | 1–2 real products | bg + accent | pairing | … |
+| **A** | … | Clutch preset | bg + accent | pairing | … |
+| **B** | … | Clutch preset | bg + accent | pairing | … |
+| **C** | … | Clutch preset | bg + accent | pairing | … |
 
-You may mark one as recommended. Then **stop the turn.** Ask exactly: **Which look should the demo follow — A, B, C, or a mix?** Wait for that answer.
+**Stop.** Ask: **Which look should the demo follow — A, B, C, or a mix?** Then write `design.md` from that preset, recap, **stop again**. No demo in those turns.
 
-A vibe adjective is not a pick. Proposal **Visual Mood** is not a pick. "I'll go with a calm / clean look" invented by you is not a pick.
+## Case 2 — style is set, need mockups
 
-Forbidden in this same turn: `design.md`, `demo.html`, mockups-as-the-answer, any other UI file.
+**Stop.** Ask them to provide at least one: `design.md` / `DESIGN.md`, screenshots, Figma, or a URL.
 
-They can take the pick back later ("change the look"). Re-offer three directions. The demo becomes a draft.
+Wait. Then extract tokens (`oklch()`). If this harness has `impeccable` (extract), invoke it. If not, extract inside this skill. Write `specs/<feature>/design.md`. Recap. **Stop.** Then mockup (step 5) from those tokens — still no demo in the extract turn.
 
-## 2. `design.md`
+## Case 3 — they already have a prototype
 
-Only after they pick (or mix). Keep it short. Must include:
+**Stop.** Ask for the path or the files. Do not generate `demo.html`. Go to step 5.5 in [ARTIFACTS.md](ARTIFACTS.md). Reverse-extract `design.md` from that UI if needed.
 
-- The chosen references
-- Color tokens (`oklch()` — no hex in the contract)
-- Type + spacing scale
-- Screen map for the screens this product actually has (do not invent extra pages)
-- At least **five visual bans** (card-itis, gray soup, rainbow gradients, dead empty states, …)
+## After `design.md` (cases 1–2)
 
-Write the file, recap the chosen references + tokens in chat, **stop the turn.** Do not write `demo.html` in this turn.
+Append 3–5 visual iron rules to `CLAUDE.md`. Check the file against the bans; fix before the demo.
 
-## 3. Enforce
+`design.md` must include: chosen references, `oklch()` tokens (no hex), type + spacing, screen map for screens this product actually has, at least five visual bans (card-itis, gray soup, rainbow gradients, dead empty states, …).
 
-Append 3–5 visual iron rules to `CLAUDE.md` (imperative: follow `design.md` before any UI edit; no hex; no new tokens without updating `design.md`).
+## After the first demo
 
-## 4. Quick audit
+The first demo is not the contract. Show the path. **Stop.** Ask: open it — what should change? Cheap / too AI / no breath → polish (below), then ask again. Do not write `contract.ts` until they accept.
 
-After `design.md` exists, check it against the bans. If it violates them, fix the file before the demo. Do not invent an evaluator agent that is not in this collection.
+## Polish (optional, as many rounds as they want)
+
+If they want it better: if this harness has `taste` or `impeccable` (audit / polish / craft), **invoke them** on the demo. If not, critique inside this skill: color (clear, not gray soup), spacing (breath), type weight contrast, cheap-AI tells — then apply CSS numbers. Ask again.
+
+Those helpers are **not** shipped in fancy-skills. Do not pretend `/taste` exists if it is not installed. Do the work here instead.
+
+They can rewind: change case, change A/B/C, or bring a prototype later.

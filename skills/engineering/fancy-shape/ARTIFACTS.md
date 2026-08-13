@@ -12,7 +12,7 @@ Paths use `specs/<feature>/` (default `core` when there is one product). Details
 
 ## From-scratch UI (step 5 — do not skip)
 
-**Gate in:** `design.md` exists because they **picked** a visual direction (step 4). If they have not picked A/B/C, go back to [VISUAL.md](VISUAL.md). Do not invent a look and jump here.
+**Gate in:** `design.md` exists from case 1 or 2 in [VISUAL.md](VISUAL.md). If they have not picked a case, go back. Do not invent a look and jump here.
 
 Order: **demo → user looks → `contract.ts` → test-contract draft → `gate_report.md`**. Then step 6.
 
@@ -31,11 +31,11 @@ Order: **demo → user looks → `contract.ts` → test-contract draft → `gate
 - Realistic mock data, not placeholder names.
 - A small debug panel that can force every UI state in `design.md` (empty, loading, error, …).
 
-Show the demo path. **Stop the turn.** Ask them to open it: what should change? If they want edits, revise the demo and ask again. Do **not** write `contract.ts` until they say the demo is the contract. Then extract `contract.ts` from the demo (states, field names, invariants). Then the test-contract draft from the proposal ACs (write ACs into `proposal.md` if they are still stubs). Then `gate_report.md`. Freeze specs as read-only for build.
+Show the demo path. **Stop the turn.** Ask them to open it: what should change? If it feels cheap or too AI, polish per [VISUAL.md](VISUAL.md) (`taste` / `impeccable` if installed, else critique here) and ask again. Do **not** write `contract.ts` until they say the demo is the contract. Then extract `contract.ts` from the demo (states, field names, invariants). Then the test-contract draft from the proposal ACs (write ACs into `proposal.md` if they are still stubs). Then `gate_report.md`. Freeze specs as read-only for build.
 
 ## Existing high-fidelity prototype (step 5.5 — do not skip)
 
-Keep the UI. Do not generate a new `demo.html`. Four steps, in order:
+If they named case 3 but have not given a path, **stop** and ask for it. Keep the UI. Do not generate a new `demo.html`. Four steps, in order:
 
 1. **Component list** — path, user-visible capability, data source (mock / hardcoded / real). Do not guess unread files.
 2. **Mock sources** — file, what it fakes, what should replace it, which milestone. List what must not be expanded.

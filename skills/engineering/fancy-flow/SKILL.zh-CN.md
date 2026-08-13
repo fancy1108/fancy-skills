@@ -56,13 +56,14 @@ description: >-
 | 调研表 | 哪条是你的痛？我哪里搞错了？ | 有反应 |
 | `proposal.md` | Pitch / MVP / 不做清单对吗？ | 接受，或指出要改的段 |
 | 初始化菜单 | 哪个档次 / 栈 / 持久化 | 选一个 |
-| 三个视觉方向 | 填满 A/B/C **表**（名称、真实参照、`oklch()`、字体、禁止），然后问：**demo 跟哪套走 — A、B、C，还是混？** 停。空字母不算提问。 | 选或混 — 一个 vibe 词不算选定 |
-| 原型 / demo | 打开它。要改什么？ | 接受，或给修改清单 — 改完再问一遍 |
+| 样子怎么锁 | **1 还模糊 / 2 我有文件 / 3 我已有原型。** 停。 | 他们选一种情况 |
+| 三个 Clutch 预设（仅情况 1） | 用 Clutch Design 预设填 A/B/C（`/fancy-shape` 的 PRESETS）。**跟哪套走 — A、B、C，还是混？** 空字母不算提问。 | 选或混 |
+| 原型 / demo | 打开它。要改什么？廉价就打磨（有则 `taste` / `impeccable`）。 | 接受，或给修改清单 — 改完再问一遍 |
 | `tasks.md` | 这样拆对吗？ | 接受 |
 | 硬化证据 | 你自己用一次。哪里不对？ | 他们用过了 |
 | 发布计划 | 上线 / 仅本地 — 可以吗？ | 可以 |
 
-禁止：写完 `proposal.md` 立刻跑 `/fancy-shape`。禁止：他们还没选视觉方向就写 `demo.html`。禁止：写完 `demo.html` 立刻写 `contract.ts`。禁止：同一轮里宣布 shape 完成并开始 `/fancy-build`。
+禁止：写完 `proposal.md` 立刻跑 `/fancy-shape`。禁止：他们还没选视觉**情况**（情况 1 还要选定预设）就写 `demo.html`。禁止：写完 `demo.html` 立刻写 `contract.ts`。禁止：同一轮里宣布 shape 完成并开始 `/fancy-build`。
 
 ## 回退（任何锁，任何时候）
 
@@ -74,7 +75,7 @@ description: >-
 | 提案不对 / MVP 错了 / 三问要改 | Orient 提案 | 改，等接受。问 shape 哪些产物要重做 |
 | 改成 Pro / Mini / Micro | Shape 初始化（档次） | `/fancy-shape` 初始化：按新档次补文件或停补。不要第二次 `git init`。提案留下 |
 | 换技术栈 / 持久化 / Agent | Shape 初始化（栈） | 改 `CLAUDE.md` 启动命令。已有业务代码就先问，不要立刻重写整个应用 |
-| 换视觉 / 不好看 | Shape 视觉 | 再给三个方向。demo 变回草稿 |
+| 换视觉 / 不好看 | Shape 视觉 | 再问三种情况。情况 1：从 Clutch 预设重新出 A/B/C。demo 变回草稿 |
 | 原型不对 / 改 demo | Shape 契约 | 改 demo，等，名字变了再改 `contract.ts` |
 | 任务拆错了 | Shape 拆解 | 改 `tasks.md`，等接受 |
 | 重做这一条 / 这个功能做错了 | Build 那一行 | 把该行重新打开。不要批量 |

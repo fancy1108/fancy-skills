@@ -10,7 +10,7 @@ description: >-
 
 从「知道要做什么」到「可以写业务代码」之间的全部准备。建仓、锁定样子和行为，再拆工作。
 
-**这里不要写产品功能。** 不要把 mock 换成真后端。不要扩张 mock。本集合没有的辅助技能不要假装存在 — 在这里做完。
+**这里不要写产品功能。** 不要把 mock 换成真后端。不要扩张 mock。本集合没有的辅助技能不要假装存在 — 在这里做完。环境里若已安装 `taste` / `impeccable` 可以调用；没装就在 [VISUAL.md](VISUAL.md) 里打磨。不要假装 fancy-skills 随包带了它们。
 
 **不要一上来**就定技术栈、写 `design.md`、写 `demo.html`、或拆 `tasks.md`。和 orient 同一条：先给选项和证据，再锁定。
 
@@ -50,8 +50,8 @@ description: >-
 ## 顺序（不许打乱）
 
 1. **初始化（第 3 步）** — [INIT.md](INIT.md)。把 Micro / Mini / Pro 做成带标签的选项（表或 A/B/C）贴进对话，然后可以标一个推荐。只有他们看过三个之后随口一点，才默认 Mini。技术栈、启动命令、Agent 同一写法。然后 `git init`，搬 `proposal.md`，短 `CLAUDE.md`，第一次提交。只建空壳。**停这一轮。** 不要在 `git init` 同一轮里做视觉或 demo。
-2. **视觉（第 4 步，仅 UI）** — [VISUAL.md](VISUAL.md)。把 **三个视觉方向**做成 A/B/C。**停这一轮。** 等他们选。再写 `design.md`，复述，**再停。** 没选之前不要写 `design.md` 或 `demo.html`。一个 vibe 词不算选定。
-3. **契约（第 5 或 5.5 步）** — [ARTIFACTS.md](ARTIFACTS.md)。从零：只有他们**选过**方向并且有了 `design.md` 才做。demo → **停，人看，改到他们接受** → `contract.ts` → 测试契约草稿 → `gate_report.md`。已有：四步审计，不重写 UI，等他们接受那些表。无 UI：跳到拆解。
+2. **视觉（第 4 步，仅 UI）** — [VISUAL.md](VISUAL.md)。**停。** 先问三种情况（模糊 / 有文件 / 已有原型）。情况 1：三个 Clutch Design 预设做成 A/B/C，等选。情况 2：等 `design.md` 或图。情况 3：等原型路径，然后走 5.5。这扇锁没过不要写 `demo.html`。一个 vibe 词不算选定。
+3. **契约（第 5 或 5.5 步）** — [ARTIFACTS.md](ARTIFACTS.md)。从零：只有情况 1 或 2 写出了 `design.md` 才做。demo → **停，人看，他们要打磨就打磨（有则调用 `taste` / `impeccable`）** → 接受 → `contract.ts` → 测试契约草稿 → `gate_report.md`。已有：四步审计，不重写 UI，等他们接受那些表。无 UI：跳到拆解。
 4. **拆解（第 6 步）** — 先给一轮库/方案调研（至少两个选项，选定 vs 否决）。然后 `decisions.md`，Mini+ 再写 `memory/ARCHITECTURE.md`，然后 `tasks.md`。**停。** 问这样拆对不对。已有原型分支的任务必须含去 mock；不要加扩张 mock 的任务。
 
 用户不懂技术时，用大白话讲栈和任务清单。**所有人**都要等人点头门才绿 — 不是只有非技术用户。
