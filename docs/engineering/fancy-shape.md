@@ -6,6 +6,8 @@ Fancy Shape is all preparation before business code: init the repo, lock visuals
 
 The defining constraint: the prototype is a gate, not a nice-to-have. From scratch it is a clickable demo; if you already have a runnable UI, that UI **is** the prototype and must be audited, not replaced.
 
+Init defaults to **Mini** (`CLAUDE.md` + `specs/core/proposal.md` + `memory/PROGRESS.md`). `CLAUDE.md` gets Pitch + iron rules + start command only — not the whole proposal.
+
 ## When to reach for it
 
 Type `/fancy-shape`, or let `/fancy-flow` reach it after a stable proposal.
@@ -21,6 +23,9 @@ No. That is the 5.5 branch: keep the UI, extract `design.md`, write the mock map
 
 **CLI-only product?**
 Skip visual and prototype. Record `Prototype: none (no UI)` in `decisions.md`.
+
+**Does this call `/fancy-init`?**
+No. Shape inits the product repo itself. `/fancy-init` is the optional conventions skill (issue tracker, glossary) and is user-invoked.
 
 ## It's working if
 

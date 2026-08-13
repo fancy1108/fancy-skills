@@ -12,7 +12,7 @@ description: >-
 
 Everything between "we know what to build" and "we may write business code". Init the repo, lock how it looks and behaves, then split work.
 
-**Do not write product features here.** No replacing mocks with real backends. No expanding mocks.
+**Do not write product features here.** No replacing mocks with real backends. No expanding mocks. Do not invent `/grill-me`, `/prototype`, or other skills that are not in this collection — do the work in this skill.
 
 ## Gate in
 
@@ -43,11 +43,11 @@ Inside this skill, pick the branch from what the user actually has. Do not run 4
 
 ## Sequence
 
-1. **Init (step 3)** — `git init` if none. Move `proposal.md` to `specs/core/proposal.md` (or `specs/<feature>/`). Shell only: `CLAUDE.md` / memory stubs. Confirm stack in one sentence. This is the first irreversible act — the orient gate must already be green.
-2. **Visual + prototype (steps 4–5 / 5.5)** — follow the branch table. From-scratch: lock `design.md`, then build the high-fidelity demo. Existing: audit, do not rewrite the UI.
-3. **Split (step 6)** — `decisions.md` (chosen vs rejected), then `tasks.md` bound to acceptance intent. If the existing-prototype branch ran, tasks must include de-mock work; do not add tasks that grow the mock.
+1. **Init (step 3)** — follow [INIT.md](INIT.md). `git init` if none. Move `proposal.md`. Write a short `CLAUDE.md` (iron rules + start command only). Default **Mini**. Confirm stack in one sentence with the user.
+2. **Visual + prototype (steps 4–5 / 5.5)** — follow the branch table and [ARTIFACTS.md](ARTIFACTS.md). From-scratch: lock `design.md`, then build the high-fidelity demo + `contract.ts`. Existing: audit, do not rewrite the UI. Show the demo to the user before splitting tasks.
+3. **Split (step 6)** — survey whether a library already does the hard part (do not reinvent). Write `decisions.md` (chosen vs rejected), then `tasks.md` bound to acceptance intent. If the existing-prototype branch ran, tasks must include de-mock work; do not add tasks that grow the mock.
 
-Details for artifacts: [ARTIFACTS.md](ARTIFACTS.md).
+If the user is not technical, explain the stack choice and the task list in plain language and wait for a yes before declaring the gate green.
 
 ## Done when
 

@@ -4,6 +4,8 @@
 
 Fancy Build implements `tasks.md` one row at a time and verifies with a real command log. It does not start without the shape gate, including the high-fidelity prototype.
 
+Check-in first: progress file, failures, git log, then one open row. It must not edit `specs/` to make a test pass.
+
 ## When to reach for it
 
 Type `/fancy-build`, or let `/fancy-flow` dispatch it when tasks are open and shape is green.
@@ -16,6 +18,7 @@ Shape gate: `design.md` or no-UI waiver, prototype or no-UI waiver, `tasks.md`, 
 
 - One task per loop, with command output, not "tests passed".
 - Mocks are not expanded.
+- A rotting session is stopped instead of patched forever.
 
 ## Where it fits
 

@@ -3,7 +3,7 @@ Skills are organized into bucket folders under `skills/`:
 - `engineering/` — daily code work
 - `productivity/` — daily non-code workflow tools
 - `misc/` — kept around but rarely used, not promoted
-- `in-progress/` — beta: public on purpose, feedback wanted, not shipped in the plugin
+- `in-progress/` — beta: public on purpose, feedback wanted, not shipped in the plugin. Deferred work (popular-skill curation, `my-video`, productivity candidates) is listed in `skills/in-progress/README.md`. Do not promote a stub.
 - `deprecated/` — no longer used
 
 Every skill in `engineering/` or `productivity/` (the **promoted** buckets) must have a reference in both `README.md` and `README.zh-CN.md`, and an entry in `.claude-plugin/plugin.json`'s `skills` array. Skills in `misc/`, `in-progress/`, and `deprecated/` must not appear in either.

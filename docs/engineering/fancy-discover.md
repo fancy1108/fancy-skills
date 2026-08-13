@@ -26,7 +26,7 @@ No. Change `plugin.json` and run `scripts/build-router.sh`.
 
 - The agent only offers skills that are in the generated inventory.
 - It points a project that needs tracker/glossary files to `/fancy-init`.
-- It refuses to pretend a skill that is not listed exists.
+- It refuses to pretend a skill that is not listed exists (including in-progress stubs).
 
 ## Where it fits
 

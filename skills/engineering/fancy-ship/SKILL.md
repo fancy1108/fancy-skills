@@ -15,20 +15,26 @@ Close the loop. Production, not a demo. Then write down what the next session ne
 
 `/fancy-harden` should have left evidence. If the happy path was never run, go back. Do not ship a UI that still runs on mocks.
 
+A toy or local-only tool may ship as **local-only**. Write that down explicitly (how to run it, that there is no URL). Still update memory.
+
 ## Release
 
-- Production env (not local placeholders)
-- Migrations verified somewhere that is not only the laptop
-- Strip secrets from logs
-- Error monitoring if the product is public
-- Record a rollback commit hash
-- Mark deploy in `memory/PROGRESS.md` (create it if Mini/Pro layout exists)
+- [ ] Production env (not local placeholders) — or an explicit local-only note
+- [ ] Migrations verified somewhere that is not only the laptop (skip if no DB)
+- [ ] Strip secrets from logs
+- [ ] Error monitoring if the product is public
+- [ ] Record a rollback commit hash (`git rev-parse HEAD`)
+- [ ] Mark deploy in `memory/PROGRESS.md` (create it if Mini/Pro layout exists)
 
-## Iterate
+## Iterate (ten minutes)
 
-- What failed in the real world → `memory/FAILURES.md`
-- Durable architecture calls → `decisions.md`; temporary calls → `memory/DECISIONS.md`
-- Next iteration from usage, not from leftover idea lists
+Update only files that exist; do not invent a six-pack on a Micro repo.
+
+1. `memory/PROGRESS.md` — where we stopped
+2. `memory/FAILURES.md` — what failed in the real world
+3. Durable architecture calls → `specs/.../decisions.md`; temporary calls → `memory/DECISIONS.md`
+4. Next iteration from usage, not from leftover idea lists
+5. Keep `CLAUDE.md` as routing + iron rules only
 
 ## Done when
 

@@ -13,6 +13,8 @@ Product truth before a repo. Hunt the problem if needed, lock the **three questi
 
 If the user already has a clear idea and the pain is obvious, skip hunting. Go to the three questions.
 
+Do not invent `/product-lens`, `/grill-me`, or `/to-prd`. Those are not in this collection yet. Do the grilling here.
+
 ## Three questions (gate)
 
 The user answers these. You may propose; they confirm. Unstable or missing → stay in this skill. Do not start a repository. Do not write `design.md`, `tasks.md`, `decisions.md`, or a DB schema.
@@ -34,6 +36,10 @@ Pick one path:
 - **Edge** — a new model/API plus an old job
 
 Output a short pain list, 3–5 competitors, and one sentence of direction. Then the three questions. If any question fails, hunt another round. Still no repo.
+
+## Grill (before the file)
+
+Ask 3–5 adversarial questions about MVP vs Non-Goals, who is *not* the user, and what would make this not worth building. Wait for answers. Do not write `proposal.md` while those are still mushy.
 
 ## Proposal
 

@@ -41,11 +41,13 @@ Look at the workspace. Run **one** next stage. Stay in-session until that stage 
 | Tasks done, no physical verification / drift still open | `/fancy-harden` |
 | Hardened, not shipped | `/fancy-ship` |
 | User wants to skip to code | Refuse until the **shape gate** is complete (and orient before that) |
+| Small bugfix / one-shot and they did **not** ask to continue the product | Decline the pipeline. Do not start orient |
 
 Never invoke user-invoked skills (`/fancy-discover`, `/fancy-init`). Shape does its own repo init.
+
+If a helper named in someone's notes (`/grill-me`, `/product-lens`, Superpowers) is not in this collection, **do the work inside the current stage**. Do not invent a missing skill.
 
 ## Hard gates
 
 - **No `git init`** until orient's three questions are stable. Orient must not init. Flow must not init. Shape inits.
 - **No business code** until the shape gate is complete, including the high-fidelity prototype (or an explicit no-UI waiver in `decisions.md`).
-- Do not invent `/grill-me` or Superpowers. Missing stages are named, not faked.

@@ -1,0 +1,5 @@
+interface:
+  display_name: "My Video"
+  short_description: "Stub — video pipeline, not shipped"
+policy:
+  allow_implicit_invocation: false

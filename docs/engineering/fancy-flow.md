@@ -12,7 +12,7 @@ Type `/fancy-flow`, or the agent reaches for it when you start a product, run vi
 
 ## Prerequisites
 
-None. All five stage skills are shipped and model-invoked so this assembler can call them.
+None. All five stage skills ship with this collection. Helper skills named in old notes (`grill-me`, Superpowers) are **not** in the collection — stages do that work themselves.
 
 ## Common questions
 
@@ -22,11 +22,15 @@ No. The skill must decline the pipeline.
 **Where is the high-fidelity prototype?**
 It is a **shape** gate, not a build artifact. `/fancy-shape` produces it (or audits the one you already have).
 
+**How do I try the pipeline?**
+Empty folder, install this collection, say you want a small **UI** product. You should see: no `git init` until three questions + `proposal.md`; then a clickable prototype before business code; skip-to-code refused.
+
 ## It's working if
 
 - New product → `/fancy-orient`, not `git init`.
 - After proposal → `/fancy-shape`, which will not skip the prototype on a UI product.
 - Skip-to-code is refused until the shape gate is green.
+- One-shot Q&A never mentions `proposal.md`.
 
 ## Where it fits
 

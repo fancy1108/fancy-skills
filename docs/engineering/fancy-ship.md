@@ -4,6 +4,8 @@
 
 Fancy Ship releases and updates memory: production config, rollback hash, `PROGRESS.md`. It does not ship mock-backed UIs.
 
+A toy may ship **local-only** if that is written down (how to run it, no URL). Public products still need env, secrets stripped, and a rollback hash.
+
 ## When to reach for it
 
 Type `/fancy-ship`, or let `/fancy-flow` dispatch it when harden is done.
@@ -16,6 +18,7 @@ Physical verification from `/fancy-harden`.
 
 - A URL or an explicit local-only note exists.
 - Rollback hash and memory files are updated.
+- `CLAUDE.md` stayed a short operations file.
 
 ## Where it fits
 

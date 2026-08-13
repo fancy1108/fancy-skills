@@ -32,4 +32,4 @@ No. It may propose; you confirm. Unconfirmed answers do not open the gate.
 
 ## Where it fits
 
-The first **pipeline stage**. Neighbour: `/fancy-flow`, which calls it and then stops until later stages exist.
+The first **pipeline stage**. Neighbour: `/fancy-flow`, which calls it then `/fancy-shape` after the handshake.

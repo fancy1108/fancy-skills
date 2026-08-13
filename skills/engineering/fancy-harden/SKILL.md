@@ -15,27 +15,39 @@ Test and drift-alignment are one loop: catch a lie (mock theatre, missing path),
 
 Prefer after `/fancy-build`. A small tool may skip heavy automation, but the happy path must be walked with a log or a screenshot.
 
+## Iron rules
+
+1. The model saying pass is not pass. Need a command log, network trace, or screenshot.
+2. The agent that wrote the feature should not be the only judge of the core path. Prefer a fresh session for hostile cases and e2e when the user can open one.
+3. Every bug becomes a test or a line in `memory/FAILURES.md`.
+4. If the UI still shows data with the backend down, it is acting. Fix or file tasks; do not ship it.
+5. Evidence > explanations. No log → treat the test as not run.
+
 ## Test (step 8)
 
 In order:
 
-1. **Reality audit** — kill mock theatre. If the UI still shows data with the backend down, it is acting. Fix or file tasks; do not ship it.
+1. **Reality audit** — grep for mock / fakeData / hardcoded fixtures / `setTimeout` pretending to be a network. List path, purpose, keep-or-replace. Show one real request log if there is a backend.
 2. Static: lint / types, with command output.
-3. Unit: core logic. Prefer a separate pass for hostile cases.
+3. Unit: core logic. Prefer a separate pass for hostile cases (empty, overflow, bad input).
 4. E2E / happy path: real commands, real output pasted or saved.
 5. The user uses it once. Record anything that "feels wrong".
 
-**Iron rules:** the model saying pass is not pass. The agent that wrote the feature should not be the only judge of the core path. Every bug becomes a test or a line in `memory/FAILURES.md`.
-
 ## Drift (step 8.5)
 
-When acceptance does not match intent, do not introspect. Physical diagnosis:
+When acceptance does not match intent, do not introspect. Physical diagnosis **before** any edit:
 
-1. Read `proposal.md` and `design.md` (and the prototype) for the feature.
+1. Read `proposal.md` and `design.md` (and the prototype) for the feature — quote the lines.
 2. Diff the implementation against that text.
 3. Run the relevant test; read the log.
 
-Then fix the right layer: code (implementation drift), your understanding vs theirs (understanding drift), or the spec that was too vague (definition drift — update the spec **and** the code).
+Name the drift:
+
+| Kind | Meaning | Fix |
+| --- | --- | --- |
+| Implementation | Spec right, code wrong | Fix code + add a regression check |
+| Understanding | Code matches a wrong reading of the user | Align with the user, then code |
+| Definition | Spec was too vague | Update the spec **and** the code |
 
 ## Done when
 

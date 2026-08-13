@@ -3,6 +3,7 @@ set -euo pipefail
 
 # Maintainer-only: symlink this repo's skills into local harness directories.
 # Not a supported installer — consumers use the Claude plugin or `npx skills add`.
+# Skips deprecated/ and in-progress/ (stubs must not land in daily harnesses).
 
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
 DESTS=("$HOME/.claude/skills" "$HOME/.agents/skills" "$HOME/.cursor/skills")
@@ -16,7 +17,7 @@ srcs=()
 while IFS= read -r -d '' skill_md; do
   src="$(dirname "$skill_md")"
   case "$src" in
-    */deprecated/*) continue ;;
+    */deprecated/*|*/in-progress/*) continue ;;
   esac
   names+=("$(basename "$src")")
   srcs+=("$src")

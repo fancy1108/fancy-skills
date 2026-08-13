@@ -20,3 +20,5 @@ Promoted skills (`engineering/` or `productivity/`) are the ones that ship. Foll
 ## Non-promoted buckets
 
 Skills in `misc/`, `in-progress/`, and `deprecated/` get a folder + bucket README row only. They must **not** appear in `plugin.json`, the top-level README Reference, `fancy-discover`'s generated inventory, or `docs/`.
+
+Promoting out of `in-progress/`: fill in a real `SKILL.md` (a stub that refuses is not enough), then follow the promoted steps above and delete the in-progress folder / backlog row.

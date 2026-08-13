@@ -39,6 +39,9 @@ The interactive contract produced (or audited) by `/fancy-shape`. From scratch: 
 **Pipeline**:
 `/fancy-flow` is the intent-triggered assembler. It dispatches `/fancy-orient` → `/fancy-shape` → `/fancy-build` → `/fancy-harden` → `/fancy-ship`. It must not run on one-shot questions.
 
+**In-progress**:
+A skill or backlog row under `skills/in-progress/`. Public, not promoted. `/fancy-discover` must not list it. A stub must refuse to run.
+
 ## Relationships
 
 - An **Issue tracker** holds many **Issues**
@@ -46,3 +49,4 @@ The interactive contract produced (or audited) by `/fancy-shape`. From scratch: 
 - `/fancy-init` writes **Setup state** in the consuming repo
 - `/fancy-flow` runs stage skills in order until the current **gate** is done
 - `/fancy-shape` produces the **High-fidelity prototype** as part of the **Shape gate**
+- An **In-progress** row is not a **Promoted skill**

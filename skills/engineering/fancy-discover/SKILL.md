@@ -23,6 +23,8 @@ Product pipeline (intent-triggered — the agent reaches these when you start a 
 - **`/fancy-harden`** — evidence-backed test + drift alignment.
 - **`/fancy-ship`** — release and memory.
 
+In-progress stubs (video pipeline, curated-skill backlog) are **not** listed below. If the user wants those, say they are not shipped yet.
+
 Everything else in this collection is a skill Fancy uses or chose to keep. If the user wants something that is not listed below, say it is not in the collection yet — do not invent a missing skill.
 
 <!-- BEGIN GENERATED INVENTORY -->
