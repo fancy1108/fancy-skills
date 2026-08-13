@@ -28,7 +28,7 @@ The file `docs/agents/setup-state.json` in a consuming repo. It is the canonical
 Who is this for? How painful is it? Why now? The user answers; the agent must not invent them. Unstable answers block a git repo.
 
 **Handshake**:
-`/fancy-orient` is done when the **Three questions** are stable and `proposal.md` is on disk. No `git init` in that skill.
+`/fancy-orient` is done when the **Three questions** are stable and `proposal.md` is on disk. Research (quotes, competitors, a direction) happens **before** those questions unless the user already answered all three in their own words. A product name is not a skip. No `git init` in that skill.
 
 **High-fidelity prototype**:
 The interactive contract produced (or audited) by `/fancy-shape`. From scratch: a clickable demo. Existing UI: that UI is the prototype. No UI: an explicit waiver in `decisions.md`. Same rank as `design.md` and `tasks.md`.

@@ -67,7 +67,7 @@ npx skills@latest add fancy1108/fancy-skills
 **模型触发**
 
 - **[fancy-flow](./skills/engineering/fancy-flow/SKILL.md)** — 按意图接手的产品流水线。新产品、vibe coding、或在产品仓库里说继续时才唤醒；日常问答不会进流水线。
-- **[fancy-orient](./skills/engineering/fancy-orient/SKILL.md)** — 锁定谁用、多痛、为什么现在做，然后写 proposal.md。不建 git 仓库。
+- **[fancy-orient](./skills/engineering/fancy-orient/SKILL.md)** — 先调研抱怨和竞品，再锁定谁用、多痛、为什么现在做，然后写 proposal.md。不建 git 仓库。
 - **[fancy-shape](./skills/engineering/fancy-shape/SKILL.md)** — 建仓、高保真原型作契约，再写 decisions.md 和 tasks.md。不写业务代码。
 - **[fancy-build](./skills/engineering/fancy-build/SKILL.md)** — 按 tasks.md 一次只做一个任务写业务代码。
 - **[fancy-harden](./skills/engineering/fancy-harden/SKILL.md)** — 用物理证据测试，并对齐漂移。不接受口头通过。

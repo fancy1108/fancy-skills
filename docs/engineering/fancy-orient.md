@@ -2,9 +2,9 @@
 
 ## What it does
 
-Fancy Orient locks product truth: who it is for, how painful it is, why now — then writes `proposal.md`. It does not create a git repository.
+Fancy Orient finds product truth **before** a repo: research real complaints and competitors, then lock who / how painful / why now, then write `proposal.md`.
 
-The defining constraint: if any of the three questions is shaky, stay here. No repo, no schema, no task list.
+The defining constraint: do not open with the three questions. A product name is a seed. Users cannot answer those questions well until they have seen evidence. If any of the three is still shaky after that, stay here. No repo, no schema, no task list.
 
 ## When to reach for it
 
@@ -14,18 +14,19 @@ Reach for this at the start of a product, not for a bugfix in an existing repo.
 
 ## Prerequisites
 
-A place to write a markdown file (current directory, a named path, or Obsidian). No git remote required.
+A place to write a markdown file (current directory, a named path, or Obsidian). No git remote required. Web search for complaints.
 
 ## Common questions
 
 **I already know what I want. Do I still hunt complaints?**
-No. Skip the hunt. Answer the three questions and write the proposal.
+If you can already say who / how painful / why now in your own words, skip research. A name like "减肥小工具" is not enough — the agent still brings quotes and competitors so you can answer those three.
 
 **Can the agent invent the three answers?**
-No. It may propose; you confirm. Unconfirmed answers do not open the gate.
+No. It may propose from the evidence; you confirm. Unconfirmed answers do not open the gate.
 
 ## It's working if
 
+- Research (quotes + 3–5 competitors + one sentence of direction) appears **before** the three questions, unless the skip rule hit.
 - The three answers are in the user's words, in `proposal.md`.
 - MVP is one capability and Non-Goals are written.
 - `git init` did not run.
