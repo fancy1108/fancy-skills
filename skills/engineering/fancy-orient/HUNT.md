@@ -1,6 +1,8 @@
 # Hunt queries (step 1)
 
-Search for what is broken. Prefer recent posts (last 1–2 years). Keep the domain of the seed if they gave one.
+Search for what is broken. Prefer recent posts (last 1–2 years from **today's date**, not a guessed year). Keep the domain of the seed if they gave one.
+
+Do not put a calendar year in the query unless you already know today's date. Never default to 2024.
 
 ## Pain
 
