@@ -4,9 +4,7 @@
 
 Fancy Shape is all preparation before business code: init the repo, lock visuals, produce a **high-fidelity prototype** as the interactive contract, then `decisions.md` and `tasks.md`.
 
-The defining constraint: the prototype is a gate, not a nice-to-have. From scratch it is a clickable demo; if you already have a runnable UI, that UI **is** the prototype and must be audited, not replaced.
-
-Init defaults to **Mini** (`CLAUDE.md` + `specs/core/proposal.md` + `memory/PROGRESS.md`). `CLAUDE.md` gets Pitch + iron rules + start command only — not the whole proposal.
+The defining constraint: do not skip the diverge steps. Init confirms stack with the user. Visual offers three directions before `design.md`. From-scratch prototype is demo → contract → test draft → gate report. An existing runnable UI is audited, not replaced.
 
 ## When to reach for it
 
@@ -18,7 +16,7 @@ Type `/fancy-shape`, or let `/fancy-flow` reach it after a stable proposal.
 
 ## Common questions
 
-**We already have a React prototype. Do we still make demo.html?**
+**We already have a runnable UI. Do we still make demo.html?**
 No. That is the 5.5 branch: keep the UI, extract `design.md`, write the mock map and P2 table.
 
 **CLI-only product?**
@@ -29,9 +27,10 @@ No. Shape inits the product repo itself. `/fancy-init` is the optional conventio
 
 ## It's working if
 
-- `git init` happened only after orient.
-- A UI product has a clickable high-fidelity artifact (or the user's existing one).
-- `tasks.md` exists and `/fancy-build` is still blocked until that is true.
+- `git init` happened only after orient and a confirmed stack.
+- Three visual directions appeared before `design.md` on a UI product.
+- A UI product has a clickable high-fidelity artifact (or the user's existing one) before `tasks.md`.
+- `/fancy-build` is still blocked until the gate is green.
 
 ## Where it fits
 

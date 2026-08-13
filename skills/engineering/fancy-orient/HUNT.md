@@ -18,7 +18,7 @@ Search for what is broken. Prefer recent posts (last 1–2 years). Keep the doma
 ## Edge
 
 - [new API or model] [old job]
-- "I built a weekend [category] widget"
+- "I built a weekend [category] tool"
 
 ## Seed
 

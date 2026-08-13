@@ -4,7 +4,7 @@
 
 Fancy Build implements `tasks.md` one row at a time and verifies with a real command log. It does not start without the shape gate, including the high-fidelity prototype.
 
-Check-in first: progress file, failures, git log, then one open row. It must not edit `specs/` to make a test pass.
+Check-in first: progress file, failures, git log, then one open row. Scope stays on that row. It must not edit `specs/` to make a test pass. Check-out before the session ends.
 
 ## When to reach for it
 

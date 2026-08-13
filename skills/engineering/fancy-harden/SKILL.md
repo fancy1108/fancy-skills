@@ -25,13 +25,15 @@ Prefer after `/fancy-build`. A small tool may skip heavy automation, but the hap
 
 ## Test (step 8)
 
-In order:
+In order — do not start at unit tests:
 
 1. **Reality audit** — grep for mock / fakeData / hardcoded fixtures / `setTimeout` pretending to be a network. List path, purpose, keep-or-replace. Show one real request log if there is a backend.
 2. Static: lint / types, with command output.
 3. Unit: core logic. Prefer a separate pass for hostile cases (empty, overflow, bad input).
-4. E2E / happy path: real commands, real output pasted or saved.
+4. E2E / happy path: run (or retarget) the test-contract from shape against the real app. Real commands, real output pasted or saved.
 5. The user uses it once. Record anything that "feels wrong".
+
+The test-contract from shape is the exam paper. Do not write a new suite that only agrees with the code you just wrote.
 
 ## Drift (step 8.5)
 
@@ -45,10 +47,14 @@ Name the drift:
 
 | Kind | Meaning | Fix |
 | --- | --- | --- |
-| Implementation | Spec right, code wrong | Fix code + add a regression check |
+| Implementation | Spec right, code wrong | Failing test first, then fix code |
 | Understanding | Code matches a wrong reading of the user | Align with the user, then code |
-| Definition | Spec was too vague | Update the spec **and** the code |
+| Definition | Spec was too vague | Update spec **and** tasks **and** code. Failing test for the new rule first |
+
+Keep four places in sync in one pass: spec, code, test, and `memory/ARCHITECTURE.md` / README if those files exist.
+
+Mini+: append anti-drift iron rules to `CLAUDE.md` (physical diagnosis before speculation; no verbal "fixed"; tests are the truth). Do not invent Husky/CI on a Micro repo; Pro may add a pre-commit test hook if none exists.
 
 ## Done when
 
-There is a verification log (commands + output), mock theatre is gone or explicitly waived, and open drift items are fixed or written as tasks. Tell `/fancy-flow`.
+There is a verification log (commands + output), mock theatre is gone or explicitly waived, open drift items are fixed or written as tasks, and Mini+ `CLAUDE.md` has the anti-drift lines. Tell `/fancy-flow`.

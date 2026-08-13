@@ -4,7 +4,7 @@
 
 Fancy Harden proves the product with physical evidence, then aligns drift (implementation, understanding, or definition). Testing and anti-drift are one loop.
 
-Reality audit first: mock theatre. Then static, unit, happy path, and the user using it once. Drift is diagnosed from files, diffs, and logs — not from the model's introspection.
+Reality audit first: mock theatre. Then static, unit, the test-contract from shape against the real app, and the user using it once. Drift is diagnosed from files, diffs, and logs — not from the model's introspection. Fixes start from a failing test.
 
 ## When to reach for it
 

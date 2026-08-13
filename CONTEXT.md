@@ -34,7 +34,7 @@ Who is this for? How painful is it? Why now? The user answers; the agent must no
 The interactive contract produced (or audited) by `/fancy-shape`. From scratch: a clickable demo. Existing UI: that UI is the prototype. No UI: an explicit waiver in `decisions.md`. Same rank as `design.md` and `tasks.md`.
 
 **Shape gate**:
-`/fancy-shape` is done when `design.md` (or no-UI waiver), the **High-fidelity prototype** (or no-UI waiver), `tasks.md`, and `decisions.md` exist. Blocks `/fancy-build`.
+`/fancy-shape` is done when `design.md` (or no-UI waiver), the **High-fidelity prototype** (or no-UI waiver), `tasks.md`, and `decisions.md` exist. From-scratch UI also needs `contract.ts`, a test-contract draft, and `gate_report.md`. Blocks `/fancy-build`. Visual directions come **before** `design.md`.
 
 **Pipeline**:
 `/fancy-flow` is the intent-triggered assembler. It dispatches `/fancy-orient` → `/fancy-shape` → `/fancy-build` → `/fancy-harden` → `/fancy-ship`. It must not run on one-shot questions.

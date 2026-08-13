@@ -2,9 +2,9 @@
 name: fancy-ship
 description: >-
   Release the product and update memory: production config, rollback point,
-  PROGRESS.md. Use when fancy-flow has hardened the build, or the user asks to
-  deploy or close an iteration. Do not ship on mock data. Do not use at
-  proposal time.
+  PROGRESS.md, and which step the next iteration starts at. Use when fancy-flow
+  has hardened the build, or the user asks to deploy or close an iteration. Do
+  not ship on mock data. Do not use at proposal time.
 ---
 
 # Fancy Ship
@@ -36,6 +36,15 @@ Update only files that exist; do not invent a six-pack on a Micro repo.
 4. Next iteration from usage, not from leftover idea lists
 5. Keep `CLAUDE.md` as routing + iron rules only
 
+**Name the next start** (write it in PROGRESS):
+
+| Change | Next stage |
+| --- | --- |
+| Interaction is wrong | `/fancy-shape` (visual / prototype) |
+| Small fix / bug | `/fancy-build` |
+| Architecture | `/fancy-shape` split (`decisions.md` / `tasks.md`) |
+| Direction is wrong | `/fancy-orient` |
+
 ## Done when
 
-There is a shipped URL or an explicit local-only ship note, rollback hash is recorded, memory files the repo uses are updated. Tell `/fancy-flow` the pipeline is idle.
+There is a shipped URL or an explicit local-only ship note, rollback hash is recorded, memory files the repo uses are updated, and the next stage is named. Tell `/fancy-flow` the pipeline is idle.

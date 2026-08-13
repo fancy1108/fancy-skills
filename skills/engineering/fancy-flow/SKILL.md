@@ -2,14 +2,16 @@
 name: fancy-flow
 description: >-
   Start or continue a product / vibe-coding pipeline. Use when the user wants
-  to start a new product, execute a vibe coding workflow, or explicitly says
-  continue in a project workspace. Do not use for one-shot questions, regex
-  help, or a small bugfix.
+  to start a new product, make an app or tool, execute a vibe coding workflow,
+  or explicitly says continue in a project workspace. Do not use for a regex,
+  a traceback, or a one-file bugfix in an existing product.
 ---
 
 # Fancy Flow
 
-Intent-triggered assembler. Detect the stage, run the next **shipped** skill, stop at gates. If you were reached for a one-shot question, **decline the pipeline** and answer it.
+Intent-triggered assembler. Detect the stage, run the next **shipped** skill, stop at gates. If you were reached for a regex, a traceback, or a one-file fix, **decline the pipeline** and answer it.
+
+A request to **make something** (an app, a tool, a product) is a product start. That is this skill. It is not a regex.
 
 ## Do not steal ordinary chat
 
@@ -35,17 +37,17 @@ Look at the workspace. Run **one** next stage. Stay in-session until that stage 
 
 | What you see | Do |
 | --- | --- |
-| No proposal, or three questions shaky | `/fancy-orient` |
+| No proposal, or three questions shaky | `/fancy-orient` (even if they already named a product or dropped a UI folder) |
 | Handshake done, shape gate incomplete | `/fancy-shape` |
 | Shape gate complete, tasks still open | `/fancy-build` |
 | Tasks done, no physical verification / drift still open | `/fancy-harden` |
 | Hardened, not shipped | `/fancy-ship` |
 | User wants to skip to code | Refuse until the **shape gate** is complete (and orient before that) |
-| Small bugfix / one-shot and they did **not** ask to continue the product | Decline the pipeline. Do not start orient |
+| Small bugfix / one-file fix and they did **not** ask to continue the product | Decline the pipeline. Do not start orient |
 
 Never invoke user-invoked skills (`/fancy-discover`, `/fancy-init`). Shape does its own repo init.
 
-If a helper named in someone's notes (`/grill-me`, `/product-lens`, Superpowers) is not in this collection, **do the work inside the current stage**. Do not invent a missing skill.
+If a helper named in someone's notes is not in this collection, **do the work inside the current stage**. Do not invent a missing skill.
 
 ## Hard gates
 
