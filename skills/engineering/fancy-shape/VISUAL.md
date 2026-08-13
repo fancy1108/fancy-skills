@@ -14,7 +14,17 @@ From the proposal's one-sentence Pitch (not from a vibe adjective alone), offer 
 - **Type pairing**
 - **What it forbids**
 
-Show them as A / B / C (or a table). You may mark one as recommended. Then **stop the turn.** Ask exactly: **Which look should the demo follow — A, B, C, or a mix?** Wait for that answer.
+A / B / C are **three different looks for this product**, invented this turn from the Pitch. They are not global names (not Micro / Mini / Pro). Do not ask "A, B, or C?" with empty letters.
+
+Paste this table, filled. The three rows must disagree (different references, different temperature). Then ask the question. Do not skip the table.
+
+| | Name | Looks like | Color (`oklch()`) | Type | Forbids |
+| --- | --- | --- | --- | --- | --- |
+| **A** | … | 1–2 real products | bg + accent | pairing | … |
+| **B** | … | 1–2 real products | bg + accent | pairing | … |
+| **C** | … | 1–2 real products | bg + accent | pairing | … |
+
+You may mark one as recommended. Then **stop the turn.** Ask exactly: **Which look should the demo follow — A, B, C, or a mix?** Wait for that answer.
 
 A vibe adjective is not a pick. Proposal **Visual Mood** is not a pick. "I'll go with a calm / clean look" invented by you is not a pick.
 

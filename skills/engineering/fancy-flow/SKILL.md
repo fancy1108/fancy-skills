@@ -57,7 +57,7 @@ Stop. Ask one question. Wait for the reply. Then either edit or proceed.
 | Research table | Which pain is yours? What did I get wrong? | react |
 | `proposal.md` | Is Pitch / MVP / Non-Goals right? | accept or name edits |
 | Init menus | which tier / stack / persistence | pick |
-| Three visual directions | A / B / C table, then: **Which look should the demo follow — A, B, C, or a mix?** Stop. | pick or mix — a vibe word is not a pick |
+| Three visual directions | Fill the A/B/C **table** (name, real references, `oklch()`, type, forbids), then: **Which look should the demo follow — A, B, C, or a mix?** Stop. Empty letters are not a question. | pick or mix — a vibe word is not a pick |
 | Prototype / demo | Open it. What should change? | accept, or a change list — then revise and ask again |
 | `tasks.md` | Is this split right? | accept |
 | Harden evidence | Use it once. What's wrong? | they used it |
