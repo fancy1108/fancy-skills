@@ -51,6 +51,8 @@ npx skills@latest add fancy1108/fancy-skills
 
 运行 `/fancy-discover` 探索这套集合里的技能。
 
+要开始做一个产品（不是随口问一句），直接说就行——`/fancy-flow` 是**模型触发**的，会接手流水线。查正则、改一个小 bug 不会被它抢走。
+
 ## 这套集合里有什么
 
 按谁能调用来分。**用户触发**的技能只有你亲手输入名称才能用。**模型触发**的技能你能调，模型在任务合适时也会自己调。用户触发的技能可以调用模型触发的技能，但不能再调用另一条用户触发的技能。
@@ -64,7 +66,8 @@ npx skills@latest add fancy1108/fancy-skills
 
 **模型触发**
 
-暂无。我在用的、或我觉得值得留下的技能会放在这里。
+- **[fancy-flow](./skills/engineering/fancy-flow/SKILL.md)** — 按意图接手的产品流水线。新产品、vibe coding、或在产品仓库里说继续时才唤醒；日常问答不会进流水线。
+- **[fancy-orient](./skills/engineering/fancy-orient/SKILL.md)** — 锁定谁用、多痛、为什么现在做，然后写 proposal.md。不建 git 仓库。
 
 ### 效率
 

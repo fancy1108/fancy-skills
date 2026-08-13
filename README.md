@@ -51,6 +51,8 @@ If a project should use Fancy's conventions (issue tracker, domain docs, Cursor 
 
 Run `/fancy-discover` to explore the skills in this collection.
 
+To start a product (not a one-shot question), say so — `/fancy-flow` is **model-invoked** and will take the pipeline from there. It will not hijack a regex or a small bugfix.
+
 ## What's in the collection
 
 These split on one axis — who can invoke them. **User-invoked** skills are reachable only when you type them. **Model-invoked** skills can be invoked by you or reached for automatically. A user-invoked skill may invoke model-invoked skills, but never another user-invoked one.
@@ -64,7 +66,8 @@ These split on one axis — who can invoke them. **User-invoked** skills are rea
 
 **Model-invoked**
 
-None yet. Skills I use or choose to keep will land here.
+- **[fancy-flow](./skills/engineering/fancy-flow/SKILL.md)** — Start or continue a product / vibe-coding pipeline. Intent-triggered; not for one-shot questions.
+- **[fancy-orient](./skills/engineering/fancy-orient/SKILL.md)** — Find the problem, lock who / how painful / why now, and write proposal.md. No git repo.
 
 ### Productivity
 

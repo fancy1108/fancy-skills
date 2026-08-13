@@ -34,13 +34,40 @@ def parse_frontmatter(text: str) -> dict[str, str]:
     if not m:
         die("SKILL.md is missing YAML frontmatter")
     data: dict[str, str] = {}
+    key: str | None = None
+    folded: list[str] = []
+    folding = False
+
+    def flush() -> None:
+        nonlocal key, folded, folding
+        if key is None:
+            return
+        if folding:
+            data[key] = " ".join(folded).strip()
+        folding = False
+        folded = []
+        key = None
+
     for raw in m.group(1).splitlines():
+        if folding:
+            if raw.startswith(" ") or raw.startswith("\t"):
+                folded.append(raw.strip())
+                continue
+            flush()
         line = raw.strip()
         if not line or line.startswith("#") or ":" not in line:
             continue
-        key, val = line.split(":", 1)
-        val = val.strip().strip("'").strip('"')
-        data[key.strip()] = val
+        k, val = line.split(":", 1)
+        k, val = k.strip(), val.strip()
+        if val in (">", ">-", "|", "|-"):
+            key = k
+            folding = True
+            folded = []
+            continue
+        flush()
+        data[k] = val.strip("'").strip('"')
+        key = None
+    flush()
     return data
 
 

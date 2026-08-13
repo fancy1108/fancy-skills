@@ -16,6 +16,8 @@
   ],
   "skills": [
     "./skills/engineering/fancy-discover",
-    "./skills/engineering/fancy-init"
+    "./skills/engineering/fancy-flow",
+    "./skills/engineering/fancy-init",
+    "./skills/engineering/fancy-orient"
   ]
 }

@@ -9,4 +9,5 @@ Daily code work. Promoted — listed in the plugin and `/fancy-discover`.
 
 ## Model-invoked
 
-None yet.
+- **[fancy-flow](./fancy-flow/SKILL.md)** — Start or continue a product / vibe-coding pipeline. Intent-triggered; not for one-shot questions.
+- **[fancy-orient](./fancy-orient/SKILL.md)** — Find the problem, lock who / how painful / why now, and write proposal.md. No git repo.

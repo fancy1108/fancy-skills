@@ -24,8 +24,18 @@ A skill the model may reach for on its own, and that other skills may invoke in 
 **Setup state**:
 The file `docs/agents/setup-state.json` in a consuming repo. It is the canonical record that `/fancy-init` has finished (or is being reconfigured). Do not use HTML comments in `CLAUDE.md` / `AGENTS.md` as a substitute.
 
+**Three questions**:
+Who is this for? How painful is it? Why now? The user answers; the agent must not invent them. Unstable answers block a git repo.
+
+**Handshake**:
+`/fancy-orient` is done when the **Three questions** are stable and `proposal.md` is on disk. No `git init` in that skill.
+
+**Pipeline**:
+`/fancy-flow` is the intent-triggered assembler. It dispatches shipped **Model-invoked** stages. It must not run on one-shot questions.
+
 ## Relationships
 
 - An **Issue tracker** holds many **Issues**
 - A **Promoted skill** is either **User-invoked** or **Model-invoked**
 - `/fancy-init` writes **Setup state** in the consuming repo
+- `/fancy-flow` runs `/fancy-orient` until the **Handshake** is done
