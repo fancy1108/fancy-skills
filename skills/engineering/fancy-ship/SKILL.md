@@ -19,6 +19,8 @@ A toy or local-only tool may ship as **local-only**. Write that down explicitly 
 
 ## Release
 
+Show this checklist. **Stop.** Ask: deploy, local-only, or not yet? Do not ship until they pick.
+
 - [ ] Production env (not local placeholders) — or an explicit local-only note
 - [ ] Migrations verified somewhere that is not only the laptop (skip if no DB)
 - [ ] Strip secrets from logs

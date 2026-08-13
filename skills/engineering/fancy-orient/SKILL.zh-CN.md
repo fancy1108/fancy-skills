@@ -22,7 +22,7 @@ description: >-
 2. **调研（第 1 步）** — 除非命中下面的跳过规则。在**那个领域**产出证据。亮出来。等用户反应。
 3. **三问（进入第 2 步的门）** — 他们看过证据之后再问。每问都锚在证据上，让他们挑选和纠正，而不是对着空白编。
 4. **拷问** — MVP vs 不做清单，谁**不是**用户。
-5. **`proposal.md`** — 写文件。停。
+5. **`proposal.md`** — 写文件。复述 Pitch / MVP / 不做清单。**停。** 问对不对。改到他们接受。这才算握手完成。
 
 ## 几乎不要跳过调研
 
@@ -88,13 +88,15 @@ python3 <本技能>/scripts/hunt.py "检索句一" "检索句二"
 
 章节见 [PROPOSAL.md](PROPOSAL.md)。填 Pitch、Problem、Tension、Goals（谁 + 一个 MVP）、Non-Goals、Vibe、Assumptions。三问用用户的原话。User Flows 和 Acceptance Criteria 可以先留草稿。**不要 schema，不要拆任务。**
 
+文件在他们接受之前都是草稿。写完后在对话里复述 **Pitch、那一个 MVP、不做清单**。问：这份对吗？要改哪段？他们说提案对了（或指出修改、你改完再问一遍）之前，不要告诉 `/fancy-flow` 握手完成，也不要开始 `/fancy-shape`。
+
 ## 完成标准
 
 - [ ] 三问之前已经做过调研（或命中跳过规则）
 - [ ] 用户能不打结巴地说出谁用 / 多痛 / 为什么现在
 - [ ] MVP 是一个能力，不是清单
 - [ ] Non-Goals 写明了
-- [ ] 磁盘上有 `proposal.md`
+- [ ] 磁盘上有 `proposal.md`，**且用户接受了**
 - [ ] 本技能里没有发生 `git init`
 
-告诉 `/fancy-flow`（或用户）握手完成。停。不要初始化项目 — 那是 `/fancy-shape`。
+告诉 `/fancy-flow`（或用户）握手完成。停。不要初始化项目 — 那是 `/fancy-shape`。不要在同一轮里调用 shape。

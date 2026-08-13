@@ -31,7 +31,7 @@ In order — do not start at unit tests:
 2. Static: lint / types, with command output.
 3. Unit: core logic. Prefer a separate pass for hostile cases (empty, overflow, bad input).
 4. E2E / happy path: run (or retarget) the test-contract from shape against the real app. Real commands, real output pasted or saved.
-5. The user uses it once. Record anything that "feels wrong".
+5. The user uses it once. Record anything that "feels wrong". **Stop** until they have used it (or they explicitly skip). Do not tell `/fancy-flow` to ship in the same turn.
 
 The test-contract from shape is the exam paper. Do not write a new suite that only agrees with the code you just wrote.
 
@@ -57,4 +57,4 @@ Mini+: append anti-drift iron rules to `CLAUDE.md` (physical diagnosis before sp
 
 ## Done when
 
-There is a verification log (commands + output), mock theatre is gone or explicitly waived, open drift items are fixed or written as tasks, and Mini+ `CLAUDE.md` has the anti-drift lines. Tell `/fancy-flow`.
+There is a verification log (commands + output), mock theatre is gone or explicitly waived, open drift items are fixed or written as tasks, Mini+ `CLAUDE.md` has the anti-drift lines, **and the user used it once**. Tell `/fancy-flow`. Do not start `/fancy-ship` in the same turn.

@@ -12,7 +12,7 @@ description: >-
 
 ## 进门
 
-**shape 门**不绿就拒绝：`design.md`（或无 UI 豁免）、**高保真原型**（或无 UI 豁免）、`tasks.md`、`decisions.md`。否则回到 `/fancy-flow` / `/fancy-shape`。
+**shape 门**不绿就拒绝：`design.md`（或无 UI 豁免）、**高保真原型**（或无 UI 豁免）、`tasks.md`、`decisions.md`，**且用户接受了这些草稿**。否则回到 `/fancy-flow` / `/fancy-shape`。
 
 不要改 `specs/` 来让检查通过。契约错了就停，把用户送回 shape / harden。若已经改了 `specs/`，先还原。
 
@@ -34,4 +34,4 @@ description: >-
 
 ## 完成标准
 
-没有未完成任务，或用户在 check-out 后暂停。告诉 `/fancy-flow`。没有 `/fancy-harden` 就不要宣布「应用做完了」。
+没有未完成任务，或用户在 check-out 后暂停。告诉 `/fancy-flow`。**停。** 不要在同一轮里开始 `/fancy-harden`。没有 `/fancy-harden` 就不要宣布「应用做完了」。

@@ -14,7 +14,7 @@ Surgical implementation. One row from `tasks.md`, verify, then the next. You are
 
 ## Gate in
 
-Refuse unless the **shape gate** is green: `design.md` (or no-UI waiver), **high-fidelity prototype** (or no-UI waiver), `tasks.md`, `decisions.md`. If not, return to `/fancy-flow` / `/fancy-shape`.
+Refuse unless the **shape gate** is green: `design.md` (or no-UI waiver), **high-fidelity prototype** (or no-UI waiver), `tasks.md`, `decisions.md`, **and the user accepted those drafts**. If not, return to `/fancy-flow` / `/fancy-shape`.
 
 Do not edit `specs/` to make a check pass. If the contract is wrong, stop and send the user back to shape / harden. Restore `specs/` if you already changed it.
 
@@ -36,4 +36,4 @@ Do not edit `specs/` to make a check pass. If the contract is wrong, stop and se
 
 ## Done when
 
-No open tasks remain, or the user pauses after check-out. Tell `/fancy-flow`. Do not announce "the app is done" without `/fancy-harden`.
+No open tasks remain, or the user pauses after check-out. Tell `/fancy-flow`. **Stop.** Do not start `/fancy-harden` in the same turn. Do not announce "the app is done" without `/fancy-harden`.

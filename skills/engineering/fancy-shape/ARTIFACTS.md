@@ -29,7 +29,7 @@ Order: **demo → user looks → `contract.ts` → test-contract draft → `gate
 - Realistic mock data, not placeholder names.
 - A small debug panel that can force every UI state in `design.md` (empty, loading, error, …).
 
-Show the demo. Wait. Then extract `contract.ts` from the demo (states, field names, invariants). Then the test-contract draft from the proposal ACs (write ACs into `proposal.md` if they are still stubs). Then `gate_report.md`. Freeze specs as read-only for build.
+Show the demo path. **Stop the turn.** Ask them to open it: what should change? If they want edits, revise the demo and ask again. Do **not** write `contract.ts` until they say the demo is the contract. Then extract `contract.ts` from the demo (states, field names, invariants). Then the test-contract draft from the proposal ACs (write ACs into `proposal.md` if they are still stubs). Then `gate_report.md`. Freeze specs as read-only for build.
 
 ## Existing high-fidelity prototype (step 5.5 — do not skip)
 
@@ -40,7 +40,7 @@ Keep the UI. Do not generate a new `demo.html`. Four steps, in order:
 3. **MVP vs P2** — Prototype is often larger than MVP. P2 stays visible in the UI if needed but gets no backend task.
 4. **Prototype → Task map** — each MVP row binds to a later task id.
 
-Reverse-extract `design.md` from the UI if step 4 was skipped. Put the four tables in `tasks.md` (or `specs/<feature>/prototype-map.md` linked from it).
+Reverse-extract `design.md` from the UI if step 4 was skipped. Put the four tables in `tasks.md` (or `specs/<feature>/prototype-map.md` linked from it). **Stop.** Ask if the map is right before writing architecture tasks.
 
 ## No UI
 
@@ -54,7 +54,7 @@ Lock UI states and data names. No string soup later. Include: state union, entit
 
 For each call: context, **chosen**, **rejected and why**. Record `Prototype branch: from-scratch | existing | none`. Schema/API tables only if the product has them.
 
-Show the survey (at least two real options) **before** writing the file.
+Show the survey (at least two real options) **before** writing the file. After `tasks.md` exists, **stop** and ask if the split is right. Do not tell `/fancy-flow` the gate is green until they accept.
 
 ## `tasks.md`
 

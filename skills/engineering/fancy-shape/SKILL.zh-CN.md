@@ -49,11 +49,11 @@ description: >-
 
 1. **初始化（第 3 步）** — [INIT.md](INIT.md)。把 Micro / Mini / Pro 做成带标签的选项（表或 A/B/C）贴进对话，然后可以标一个推荐。只有他们看过三个之后随口一点，才默认 Mini。技术栈、启动命令、Agent 同一写法。然后 `git init`，搬 `proposal.md`，短 `CLAUDE.md`，第一次提交。只建空壳。
 2. **视觉（第 4 步，仅 UI）** — [VISUAL.md](VISUAL.md)。给 **三个视觉方向**，等他们选，再写 `design.md`。视觉禁令写进 `CLAUDE.md`。没选之前不要写 `design.md`。
-3. **契约（第 5 或 5.5 步）** — [ARTIFACTS.md](ARTIFACTS.md)。从零：demo → 人看 → `contract.ts` → 测试契约草稿 → `gate_report.md`。已有：四步审计，不重写 UI。无 UI：跳到拆解。
-4. **拆解（第 6 步）** — 先给一轮库/方案调研（至少两个选项，选定 vs 否决）。然后 `decisions.md`，Mini+ 再写 `memory/ARCHITECTURE.md`，然后 `tasks.md`。已有原型分支的任务必须含去 mock；不要加扩张 mock 的任务。
+3. **契约（第 5 或 5.5 步）** — [ARTIFACTS.md](ARTIFACTS.md)。从零：demo → **停，人看，改到他们接受** → `contract.ts` → 测试契约草稿 → `gate_report.md`。已有：四步审计，不重写 UI，等他们接受那些表。无 UI：跳到拆解。
+4. **拆解（第 6 步）** — 先给一轮库/方案调研（至少两个选项，选定 vs 否决）。然后 `decisions.md`，Mini+ 再写 `memory/ARCHITECTURE.md`，然后 `tasks.md`。**停。** 问这样拆对不对。已有原型分支的任务必须含去 mock；不要加扩张 mock 的任务。
 
-用户不懂技术时，用大白话讲栈和任务清单，等人点头再宣布门绿。
+用户不懂技术时，用大白话讲栈和任务清单。**所有人**都要等人点头门才绿 — 不是只有非技术用户。
 
 ## 完成标准
 
-出门清单全绿。告诉 `/fancy-flow` shape 完成。除非用户还在 flow 会话里并且 flow 接着分派，否则不要开始 `/fancy-build`。
+出门清单全绿，**且**他们接受了原型和 `tasks.md`。告诉 `/fancy-flow` shape 完成。不要在同一轮里开始 `/fancy-build`。

@@ -24,7 +24,7 @@ Do not invent `/product-lens`, `/grill-me`, `/exa-search`, or `/to-prd`. Search 
 2. **Research (step 1)** — unless the skip rule below is true. Produce evidence **in that domain**. Show it. Wait for the user to react.
 3. **Three questions (gate into step 2)** — ask only after they have seen the evidence. Anchor each question to that evidence so they can pick and correct, not invent from a blank page.
 4. **Grill** — MVP vs Non-Goals, who is *not* the user.
-5. **`proposal.md`** — write the file. Stop.
+5. **`proposal.md`** — write the file. Recap Pitch / MVP / Non-Goals. **Stop.** Ask if it is right. Edit until they accept. Only then is the handshake done.
 
 ## Skip research? Almost never
 
@@ -90,13 +90,15 @@ After the three questions are stable, write `proposal.md`:
 
 Use the sections in [PROPOSAL.md](PROPOSAL.md). Fill Pitch, Problem, Tension, Goals (who + MVP), Non-Goals, Vibe, Assumptions. Quote the three answers in the user's words. User Flows and Acceptance Criteria may be stubs. **No schema, no task breakdown.**
 
+The file is a draft until they accept it. After writing, recap **Pitch, the one MVP, Non-Goals** in chat. Ask: is this right? What should change? Do not tell `/fancy-flow` the handshake is done, and do not start `/fancy-shape`, until they say the proposal is right (or they name edits and you apply them and ask again).
+
 ## Done when
 
 - [ ] Research (or the skip rule) happened **before** the three questions
 - [ ] The user can say who / how painful / why now without hedging
 - [ ] MVP is one capability, not a laundry list
 - [ ] Non-Goals are explicit
-- [ ] `proposal.md` is on disk
+- [ ] `proposal.md` is on disk **and the user accepted it**
 - [ ] No `git init` happened in this skill
 
-Tell `/fancy-flow` (or the user) the handshake is done. Stop. Do not initialize a project — that is `/fancy-shape`.
+Tell `/fancy-flow` (or the user) the handshake is done. Stop. Do not initialize a project — that is `/fancy-shape`. Do not invoke shape in the same turn.

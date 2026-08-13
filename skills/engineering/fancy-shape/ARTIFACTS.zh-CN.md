@@ -29,7 +29,7 @@
 - mock 数据要像真的，不要占位人名。
 - 右下角小调试面板，能强制切到 `design.md` 里每一个 UI 状态（空、加载、错误，…）。
 
-把 demo 亮出来。等。然后从 demo 抽出 `contract.ts`（状态、字段名、不变量）。再按提案 AC 写测试契约草稿（AC 还是草稿就先写回 `proposal.md`）。然后 `gate_report.md`。之后把 specs 当只读，留给 build。
+把 demo 路径亮出来。**停这一轮。** 请他们打开：要改什么？要改就改 demo，再问一遍。他们说 demo 就是契约之前，**不要**写 `contract.ts`。然后从 demo 抽出 `contract.ts`（状态、字段名、不变量）。再按提案 AC 写测试契约草稿（AC 还是草稿就先写回 `proposal.md`）。然后 `gate_report.md`。之后把 specs 当只读，留给 build。
 
 ## 已有高保真原型（第 5.5 步 — 不许跳）
 
@@ -40,7 +40,7 @@
 3. **MVP vs P2** — 原型往往比 MVP 大。P2 可以留在界面上，但不写后端任务。
 4. **Prototype → Task 映射** — 每个 MVP 行绑到后面的 task id。
 
-若跳过了第 4 步，从 UI 反提 `design.md`。四张表写进 `tasks.md`（或 `specs/<feature>/prototype-map.md` 再从 tasks 引用）。
+若跳过了第 4 步，从 UI 反提 `design.md`。四张表写进 `tasks.md`（或 `specs/<feature>/prototype-map.md` 再从 tasks 引用）。**停。** 问这张映射对不对，再写架构任务。
 
 ## 无 UI
 
@@ -54,7 +54,7 @@
 
 每个决策：背景、**选定**、**否决及原因**。记录 `Prototype branch: from-scratch | existing | none`。有库表/API 才写那些表。
 
-**先**展示调研（至少两个真实选项），再写文件。
+**先**展示调研（至少两个真实选项），再写文件。`tasks.md` 落地后**停**，问这样拆对不对。他们接受之前不要告诉 `/fancy-flow` 门绿了。
 
 ## `tasks.md`
 

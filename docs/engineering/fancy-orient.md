@@ -4,7 +4,7 @@
 
 Fancy Orient finds product truth **before** a repo: research real complaints and competitors, then lock who / how painful / why now, then write `proposal.md`.
 
-The defining constraint: first they say **what they want to make**. Then research that domain. Then the three questions. Do not open with pain interviews or the three questions.
+The defining constraint: first they say **what they want to make**. Then research that domain. Then the three questions. Then write `proposal.md` and **wait until they say it is right**. Do not open with pain interviews or the three questions.
 
 ## When to reach for it
 
@@ -32,10 +32,10 @@ Claude Code `WebSearch` is an Anthropic server tool. It does not run on a third-
 - The first question (if intent is unknown) is only "what do you want to make?" — not a pain interview.
 - Research in that domain appears **before** the three questions, unless the skip rule hit.
 - Pain quotes have URLs `scripts/hunt.py` actually returned. A failed hunt does not become a "domain knowledge" table.
-- The three answers are in the user's words, in `proposal.md`.
+- The three answers are in the user's words, in `proposal.md`, **and they accepted that file**.
 - MVP is one capability and Non-Goals are written.
 - `git init` did not run.
 
 ## Where it fits
 
-The first **pipeline stage**. Neighbour: `/fancy-flow`, which calls it then `/fancy-shape` after the handshake.
+The first **pipeline stage**. Neighbour: `/fancy-flow`, which calls it then `/fancy-shape` **after they accept the proposal**.

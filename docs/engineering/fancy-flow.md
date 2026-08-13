@@ -4,7 +4,7 @@
 
 Fancy Flow is the intent-triggered assembler: it detects which pipeline stage is next and runs that skill. It does not load on ordinary chat.
 
-The defining constraint: five stages, one at a time, hard gates. Orient researches before the three questions. Shape owns init and the **high-fidelity prototype**. Build may not start until that prototype (or a no-UI waiver) exists.
+The defining constraint: five stages, one at a time, **human locks between drafts**. A file on disk is not acceptance. Orient researches before the three questions, then waits for the written proposal to be accepted. Shape owns init and the **high-fidelity prototype**, and waits for the user to accept the demo and `tasks.md`. Build may not start until that prototype (or a no-UI waiver) exists **and** they said the split is right.
 
 A request to make an app or tool is a product start. A regex is not.
 
@@ -30,7 +30,8 @@ Empty folder, install this collection, say you want a small **UI** product. You 
 ## It's working if
 
 - New product → `/fancy-orient`, not `git init`, not three empty prompts.
-- After proposal → `/fancy-shape`, which will not skip the prototype on a UI product.
+- After proposal → stop until they accept it, then `/fancy-shape`.
+- After a clickable prototype → stop until they accept it; do not jump to `contract.ts`.
 - Skip-to-code is refused until the shape gate is green.
 - One-shot Q&A never mentions `proposal.md`.
 
