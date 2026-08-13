@@ -46,6 +46,8 @@ description: >-
 
 永远不要调用仅用户触发的技能（`/fancy-discover`、`/fancy-init`、`/fancy-locale`）。建仓是 shape 自己的事。
 
+本对话里已经点名要做什么，把那句话当作种子传给 `/fancy-orient`。不要让 orient 再问想做什么。
+
 笔记里点名的辅助技能若本集合没有，**在当前阶段内部做完**。不要假装有一条不存在的技能。
 
 ## 硬卡点

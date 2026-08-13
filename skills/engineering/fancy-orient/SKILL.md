@@ -10,18 +10,21 @@ description: >-
 
 # Fancy Orient
 
-Product truth before a repo. **Step 1 first: research, then evidence.** Step 2 is the proposal. **Never `git init`.** Never open by quizzing the three questions.
+Product truth before a repo. **Never `git init`.** Never open by quizzing the three questions. Never open by asking what tools annoy them.
 
-A product name is a **seed**, not a finished answer. Users cannot answer who / how painful / why now well until they have seen real complaints and competitors. Your job in step 1 is to go get that, put it in front of them, then help them converge.
+If this conversation already named what to make, that is the seed — go research that domain. Do not ask again.
+
+If it did not, ask **exactly one** question: **What do you want to make?** A name, a category, or "I don't have an idea yet" is enough. Then research. Do not interview them about pain, users, or annoying apps before they have said what they want.
 
 Do not invent `/product-lens`, `/grill-me`, `/exa-search`, or `/to-prd`. Search and grill inside this skill.
 
 ## Sequence (do not reorder)
 
-1. **Research (step 1)** — unless the skip rule below is true. Produce evidence. Show it. Wait for the user to react.
-2. **Three questions (gate into step 2)** — ask only after they have seen the evidence. Anchor each question to that evidence so they can pick and correct, not invent from a blank page.
-3. **Grill** — MVP vs Non-Goals, who is *not* the user.
-4. **`proposal.md`** — write the file. Stop.
+1. **Intent** — if unknown, one question: what do you want to make? If already known, skip.
+2. **Research (step 1)** — unless the skip rule below is true. Produce evidence **in that domain**. Show it. Wait for the user to react.
+3. **Three questions (gate into step 2)** — ask only after they have seen the evidence. Anchor each question to that evidence so they can pick and correct, not invent from a blank page.
+4. **Grill** — MVP vs Non-Goals, who is *not* the user.
+5. **`proposal.md`** — write the file. Stop.
 
 ## Skip research? Almost never
 
@@ -35,8 +38,8 @@ Don't search for "what idea is good". Search for "what is broken". Use web searc
 
 | They have | You do |
 | --- | --- |
-| **No idea** | Do **not** wait for a seed. One line: you can name a domain to narrow, otherwise hunting starts now. Pick one hunter path: **Pain** (real complaints), **Gap** (1-star reviews / Feature Requests that sat for years), or **Edge** (new model/API + old job). Search immediately. |
-| **A seed** (a name or a category) | Hunt **that domain**. Existing apps' 1-star reviews, "I hate that…", "why isn't there a tool that does A and B". Do not wander into an unrelated field. |
+| **A seed** (they said what to make: a name or a category) | Hunt **that domain**. Existing apps' 1-star reviews, "I hate that…", "why isn't there a tool that does A and B". Do not wander into an unrelated field. |
+| **No idea** (they said they have none) | Pick one hunter path: **Pain** (real complaints), **Gap** (1-star reviews / Feature Requests that sat for years), or **Edge** (new model/API + old job). Search. Do not invent a product for them before showing evidence. |
 
 Then show, in the draft environment (chat or a note they name — still no git repo):
 

@@ -4,7 +4,7 @@
 
 Fancy Orient finds product truth **before** a repo: research real complaints and competitors, then lock who / how painful / why now, then write `proposal.md`.
 
-The defining constraint: do not open with the three questions. A product name is a seed. Users cannot answer those questions well until they have seen evidence. If any of the three is still shaky after that, stay here. No repo, no schema, no task list.
+The defining constraint: first they say **what they want to make**. Then research that domain. Then the three questions. Do not open with pain interviews or the three questions.
 
 ## When to reach for it
 
@@ -26,7 +26,8 @@ No. It may propose from the evidence; you confirm. Unconfirmed answers do not op
 
 ## It's working if
 
-- Research (quotes + 3–5 competitors + one sentence of direction) appears **before** the three questions, unless the skip rule hit.
+- The first question (if intent is unknown) is only "what do you want to make?" — not a pain interview.
+- Research in that domain appears **before** the three questions, unless the skip rule hit.
 - The three answers are in the user's words, in `proposal.md`.
 - MVP is one capability and Non-Goals are written.
 - `git init` did not run.

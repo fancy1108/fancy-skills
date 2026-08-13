@@ -47,7 +47,7 @@ Look at the workspace. Run **one** next stage. Stay in-session until that stage 
 
 Never invoke user-invoked skills (`/fancy-discover`, `/fancy-init`, `/fancy-locale`). Shape does its own repo init.
 
-If a helper named in someone's notes is not in this collection, **do the work inside the current stage**. Do not invent a missing skill.
+If this conversation already named a product, pass that sentence into `/fancy-orient` as the seed. Do not make orient ask what they want.
 
 ## Hard gates
 
